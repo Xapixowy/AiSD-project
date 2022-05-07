@@ -1,0 +1,6 @@
+/*.sln
+/.git/
+/.vs/
+/x64/Debug/
+/projekt_Jakub-Chodzinski/*.vcxproj*
+/projekt_Jakub-Chodzinski/x64/
