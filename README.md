@@ -1,4 +1,4 @@
-#AiSD-project
+# AiSD-project
 
 ## Zalozenia projektów zaliczeniowych, ver. 1.0:  
 - analiza empiryczna zlozonosci algorytmów sortowania i wyszukiwania,
