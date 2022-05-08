@@ -1,0 +1,26 @@
+# AiSD-project
+## Założenia projektów zaliczeniowych, ver. 1.0:
+- analiza empiryczna złożoności algorytmów sortowania i wyszukiwania,
+- zastosowanie struktur danych w algorytmach grafowych: implementacja algorytmu Dijkstry i algorytmów przeszukiwania grafów wszerz i w głąb.
+## Analiza empiryczna złożoności algorytmów sortowania i wyszukiwania:  
+- algorytmy sortowania bąbelkowego (bubble), przez wstawianie (insertion), przez wybór (selection), szybkiego (quick), przez scalanie (merge): wybrane dwa z pierwszych trzech i jeden z pozostałych dwóch algorytmów,
+- algorytmy wyszukiwania liniowego i binarnego,
+- trzy typy danych wejściowych: posortowane, posortowane w kolejności odwrotnej, kolejność losowa,
+- rozmiary danych wejściowych: n, 2n, 3n, 4n, 5n, 6n, ... gdzie n - rozmiar.
+## Sprawozdanie:
+- dokładna informacja o autorstwie programu (można korzystać z materiałów z Internetu i z pomocy kolegów, ale konieczna będzie dokładna znajomość programu), instrukcja kompilacji i uruchomienia, opis realizacji części źródeł programu odpowiedzialnych analizowane algorytmy i za empiryczną analizę złożoności algorytmów,
+- tabelki/wykresy zależności liczb wykonań operacji od rozmiaru zadania,
+- programy w C/C++ w tym analizowane algorytmy w czystym C, kompilowane w Visual Studio 2019, oddajemy źródła wszystkich części programu (wyjątek stanowią funkcje pomocnicze, np. użyte do rysowania wykresów),
+- oddajemy projekt w 4 folderach: źródła programu z plikiem projektu do komilacji / budowy programu, program wykonywalny (wersja Release) i ewentualnie potrzebne biblioteki, dane (ten folder pewnie będzie pusty), dokumentacja (sprawozdanie wspomniane wyżej, preferowany format pdf),
+- program uruchamialny na komputerze z "czystym" systemem Windows, tzn. bez konieczności instalacji kompilatora, środowiska programistycznego itp.,  
+- termin przesłania pliku zip z czterema folderami: 20 maja; zachęcam do wcześniejszego oddawania programów.
+> To są ogólne założenia zaliczenia na ocenę bdb, szczegółowe ustalenia pozostawiam Państwu, wszystkie rozsądne ustalenia zaakceptuję, zaakceptuję również rozsądną modyfikację powyższych założeń. W przypadku watpliwości zapraszam na konsultacje.
+**Sprawozdanie musi zawierać następujące elementy:**
+- sformułowanie problemu,
+- opis problemu,
+- opis rozwiązania,
+- prezentacja wyników,
+- wnioski.
+
+Sprawozdanie powinno być adresowane do czytelników z ogólną wiedzą informatyczną, opisy muszą byc jednoznacze.
+Źródła programu należy komentować jednoznacznie, ale oszczędnie.

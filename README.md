@@ -1,12 +1,22 @@
 # AiSD-project
-
 ## Zalozenia projektów zaliczeniowych, ver. 1.0:  
 - analiza empiryczna zlozonosci algorytmów sortowania i wyszukiwania,
 - zastosowanie struktur danych w algorytmach grafowych: implementacja algorytmu Dijkstry i algorytmów przeszukiwania grafów wszerz i w glab.
 ## Analiza empiryczna zlozonosci algorytmów sortowania i wyszukiwania:  
-- algorytmy sortowania babelkowego (bubble), przez wstawianie (insertion), przez wybór (selection), szybkiego (quick), przez scalanie (merge): wybrane dwa z pierwszych trzech i jeden z pozostalych dwóch algorytmów,
-- algorytmy wyszukiwania liniowego i binarnego,
-- trzy typy danych wejsciowych: posortowane, posortowane w kolejnosci odwrotnej, kolejnosc losowa,
+- algorytmy sortowania:
+	- babelkowego (bubble),
+	- przez wstawianie (insertion),
+	- przez wybór (selection),
+	- szybkiego (quick),
+	- przez scalanie (merge),
+`wybrane dwa z pierwszych trzech i jeden z pozostalych dwóch algorytmów)`
+- algorytmy wyszukiwania:
+	- liniowego,
+	- binarnego,
+- trzy typy danych wejsciowych:
+	- posortowane,
+	- posortowane w kolejnosci odwrotnej,
+	- kolejnosc losowa,
 - rozmiary danych wejsciowych: n, 2n, 3n, 4n, 5n, 6n, ... gdzie n - rozmiar.
 ## Sprawozdanie:
 - dokladna informacja o autorstwie programu (mozna korzystac z materialów z Internetu i z pomocy kolegów, ale konieczna bedzie dokladna znajomosc programu), instrukcja kompilacji i uruchomienia, opis realizacji czesci zródel programu odpowiedzialnych analizowane algorytmy i za empiryczna analize zlozonosci algorytmów,
@@ -27,3 +37,8 @@
 
 Sprawozdanie powinno byc adresowane do czytelników z ogólna wiedza informatyczna, opisy musza byc jednoznacze.
 Zródla programu nalezy komentowac jednoznacznie, ale oszczednie.
+
+---
+
+# References
+https://bb.wsiz.pl/webapps/blackboard/content/listContent.jsp?course_id=_16063_1&content_id=_480683_1&mode=reset

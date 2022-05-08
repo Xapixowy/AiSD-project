@@ -52,31 +52,11 @@ void mergeSort(int array[], int const begin, int const end)
     merge(array, begin, mid, end);
 }
 
-Arrays::Arrays() {
-	this->n = 0;
-    this->max = 100;
-    this->min = 0;
-	this->randomArray = nullptr;
-	this->ascendingArray = nullptr;
-	this->descendingArray = nullptr;
-    this->size = n;
-}
-
-Arrays::Arrays(int n, int max, int min) {
-	this->n = n;
-    if (max <= min) {
-        this->max = 100;
-        this->min = 0;
-    }
-    else {
-        this->max = max;
-        this->min = min;
-    }
-	this->randomArray = new int[n];
-	this->ascendingArray = new int[n];
-	this->descendingArray = new int[n];
-    this->size = n;
-	fillArrays();
+Arrays::Arrays(int size, int max, int min) {
+	this->randomArray = new int[size];
+	this->ascendingArray = new int[size];
+	this->descendingArray = new int[size];
+	fillArrays(size, max, min);
 }
 
 Arrays::~Arrays() {
@@ -85,29 +65,28 @@ Arrays::~Arrays() {
 	delete this->descendingArray;
 }
 
-void Arrays::fillArrays(int max, int min) {
+void Arrays::fillArrays(int size, int max, int min) {
+    this->size = size;
     if (max <= min) {
         this->max = 100;
         this->min = 0;
     }
     else {
-        if (max != this->max)
-            this->max = max;
-        else if (min != this->min)
-            this->min = min;
+        this->max = max;
+        this->min = min;
     }
-    Sleep(1000);
+    Sleep(100);
 	srand(time(NULL));
-    int randValue = (rand() % ((this->max)-(this->min)) + this->min);
-    for (int i = 0; i < this->n; i++) {
+    int randValue = (rand() % ((this->max) + 1) + this->min);
+    for (int i = 0; i < this->size; i++) {
         this->randomArray[i] = randValue;
         this->ascendingArray[i] = randValue;
         this->descendingArray[i] = randValue;
-        randValue = (rand() % ((this->max) - (this->min)) + this->min);
+        randValue = (rand() % ((this->max) + 1) + this->min);
     }
-    mergeSort(this->ascendingArray, 0, (this->n) - 1);
+    mergeSort(this->ascendingArray, 0, (this->size) - 1);
     int temp = 0;
-    for (int i = n-1; i >=0; i--) {
+    for (int i = size -1; i >=0; i--) {
         this->descendingArray[i] = this->ascendingArray[temp];
         temp++;
     }
@@ -125,13 +104,15 @@ int* Arrays::getArray(int type) {
 }
 
 void Arrays::printArrays() {
+    cout << (char)(175) << " Arrays:" << endl;
 	cout << "randomArray:" << endl;
-	for (int i = 0; i < this->n; i++)
+	for (int i = 0; i < this->size; i++)
 		cout << this->randomArray[i] << " ";
 	cout << endl << "ascendingArray:" << endl;
-	for (int i = 0; i < this->n; i++)
+	for (int i = 0; i < this->size; i++)
 		cout << this->ascendingArray[i] << " ";
 	cout << endl << "descendingArray:" << endl;
-	for (int i = 0; i < this->n; i++)
+	for (int i = 0; i < this->size; i++)
 		cout << this->descendingArray[i] << " ";
+    cout << endl;
 }
