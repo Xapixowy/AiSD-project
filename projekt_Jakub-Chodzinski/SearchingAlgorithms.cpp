@@ -20,6 +20,29 @@ SearchingAlgorithms::~SearchingAlgorithms() {
 	delete this->array;
 };
 
+int* SearchingAlgorithms::getArray() {
+	return this->array;
+}
+
+int SearchingAlgorithms::getPositions(int type) {
+	if (type == 0)
+		return this->positions[0];
+	else if (type == 1)
+		return this->positions[1];
+	else
+		return -1;
+}
+
+int SearchingAlgorithms::getDominantOperations(int type) {
+	if (type == 0)
+		return this->dominantOperations[0];
+	else if (type == 1)
+		return this->dominantOperations[1];
+	else
+		return -1;
+}
+
+
 void SearchingAlgorithms::setArray(int* array, int size) {
 	this->array = array;
 	this->arraySize = size;
@@ -33,21 +56,18 @@ void SearchingAlgorithms::setSearchingValue(int searchingValue) {
 };
 
 void SearchingAlgorithms::printArray() {
-	cout << (char)(175) << " Array:" << endl;
 	for (int i = 0; i < this->arraySize; i++)
 		cout << this->array[i] << " ";
 	cout << endl;
 };
 
 void SearchingAlgorithms::printPositions() {
-	cout << (char)(175) << " Positions of searching value:" << endl;
 	cout << "Linear Search: " << positions[0] << endl;
 	cout << "Binary Search: " << positions[1] << endl;
 	cout << endl;
 };
 
 void SearchingAlgorithms::printDominantOperations() {
-	cout << (char)(175) << " Dominant operations:" << endl;
 	cout << "Linear Search: " << dominantOperations[0] << endl;
 	cout << "Binary Search: " << dominantOperations[1] << endl;
 	cout << endl;

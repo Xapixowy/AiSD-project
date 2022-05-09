@@ -1,7 +1,7 @@
 #pragma once
 class SortingAlgorithms
 {
-	int** sortedArrays;
+	int** arrays;
 	int arraysSize;
 	int dominantOperations[3];
 	void merge(int array[], int l, int m, int r);
@@ -13,6 +13,8 @@ public:
 	void setArray(int* array, int size);
 	void printArrays();
 	void printDominantOperations();
+	int* getArray(int type);
+	int getDominantOperations(int type);
 	void bubbleSort();
 	void insertionSort();
 	void mergeSort();

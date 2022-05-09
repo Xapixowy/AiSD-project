@@ -13,6 +13,9 @@ public:
 	void printArray();
 	void printPositions();
 	void printDominantOperations();
+	int* getArray();
+	int getPositions(int type);
+	int getDominantOperations(int type);
 	void setArray(int* array, int size);
 	void setSearchingValue(int searchingValue);
 	void linearSearch();
