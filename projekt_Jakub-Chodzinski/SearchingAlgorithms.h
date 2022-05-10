@@ -6,7 +6,7 @@ class SearchingAlgorithms
 	int searchingValue;
 	int positions[2];
 	int dominantOperations[2];
-	int binarySearch2(int* array, int searchingValue, int start, int end);
+	int binarySearch2(int* array, int searchingValue, int left, int right);
 public:
 	SearchingAlgorithms(int* array, int size, int searchingValue, bool search = true);
 	~SearchingAlgorithms();

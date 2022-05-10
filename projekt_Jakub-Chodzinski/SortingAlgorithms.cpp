@@ -105,56 +105,64 @@ void SortingAlgorithms::bubbleSort() {
 }
 
 void SortingAlgorithms::insertionSort() {
+	int dominantOperations[2] = { 0,0 };
+	bool flag;
 	int i, key, j;
 	for (i = 1; i < this->arraysSize; i++) {
+		flag = false;
 		key = this->arrays[1][i];
 		j = i - 1;
-		this->dominantOperations[1]++;
+		dominantOperations[0]++;
 		while (j >= 0 && this->arrays[1][j] > key) {
-			this->dominantOperations[1]++;
+			flag = true;
+			dominantOperations[1]++;
 			this->arrays[1][j + 1] = this->arrays[1][j];
 			j = j - 1;
 		}
+		if (flag)
+			dominantOperations[1]--;
 		this->arrays[1][j + 1] = key;
 	}
+	this->dominantOperations[1] = dominantOperations[0] + dominantOperations[1];
 }
 
-void SortingAlgorithms::merge(int arr[], int l, int m, int r) {
+void SortingAlgorithms::merge(int* array, int left, int middleValue, int right) {
+	this->dominantOperations[2]++;
 	int i, j, k;
-	int n1 = m - l + 1;
-	int n2 = r - m;
-	int* L = new int[n1];
-	int* R = new int[n2];
+	int n1 = middleValue - left + 1;
+	int n2 = right - middleValue;
+	int* Left = new int[n1];
+	int* Right = new int[n2];
 	for (i = 0; i < n1; i++)
-		L[i] = arr[l + i];
+		Left[i] = array[left + i];
 	for (j = 0; j < n2; j++)
-		R[j] = arr[m + 1 + j];
+		Right[j] = array[middleValue + 1 + j];
 	i = 0;
 	j = 0;
-	k = l;
+	k = left;
 	while (i < n1 && j < n2)
 	{
-		if (L[i] <= R[j])
+		if (Left[i] <= Right[j])
 		{
-			arr[k] = L[i];
+			array[k] = Left[i];
 			i++;
 		}
 		else
 		{
-			arr[k] = R[j];
+			array[k] = Right[j];
 			j++;
 		}
 		k++;
 	}
 	while (i < n1)
 	{
-		arr[k] = L[i];
+		array[k] = Left[i];
 		i++;
 		k++;
 	}
 	while (j < n2)
 	{
-		arr[k] = R[j];
+		array[k] = Right[j];
 		j++;
 		k++;
 	}
@@ -164,12 +172,12 @@ void SortingAlgorithms::mergeSort() {
 	mergeSort2(this->arrays[2], 0, (this->arraysSize) - 1);
 }
 
-void SortingAlgorithms::mergeSort2(int arr[], int l, int r) {
-	if (l < r)
+void SortingAlgorithms::mergeSort2(int* array, int left, int right) {
+	if (left < right)
 	{
-		int m = l + (r - l) / 2;
-		mergeSort2(arr, l, m);
-		mergeSort2(arr, m + 1, r);
-		merge(arr, l, m, r);
+		int middleValue = left + (right - left) / 2;
+		mergeSort2(array, left, middleValue);
+		mergeSort2(array, middleValue + 1, right);
+		merge(array, left, middleValue, right);
 	}
 }

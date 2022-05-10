@@ -14,7 +14,7 @@ int main()
     // Tryb debugowania
     // debug = true <-- Wlacza tryb debugowania
     // debug = false <-- Wylacza tryb debugowania
-    bool debug = false;
+    bool debug = true;
 
     // Obsluga programu
     cout << "AiSD - Projekt\n\n";
@@ -23,11 +23,11 @@ int main()
     int dataQuantity = 0, dataSize = 0, dataMin, dataMax, searchingValue;
     char saveToFile = 'a', showData = 'a';
     if (debug) {
-        dataQuantity = 10;
-        dataSize = 10;
+        dataQuantity = 100;
+        dataSize = 100;
         dataMin = 0;
         dataMax = 100;
-        searchingValue = 50;
+        searchingValue = 69;
         saveToFile = 'y';
         fileName = "data";
         showData = 'n';
@@ -62,7 +62,23 @@ int main()
             cin >> showData;
     }
 
+    // Wyswietlenie podsumowania wyborow uzytkownika
+    system("cls");
+    cout << (char)(175) << " Podsumowanie wyborow:\n";
+    cout << "Liczba tablic do wygenerowania: " << dataQuantity << "\n";
+    cout << "Liczba elementow pierwszej tablicy: " << dataSize << "\n";
+    cout << "Minimalna wartosc elementu w tablicy: " << dataMin << "\n";
+    cout << "Maksymalna wartosc elementu w tablicy: " << dataMax << "\n";
+    cout << "Wyszukiwana wartosc dla algorytmow wyszukiwania: " << searchingValue << "\n";
+    cout << "Czy zapisac dane do pliku: " << (saveToFile == 'y' ? "tak" : "nie") << "\n";
+    if (saveToFile == 'y') {
+        cout << "Nazwa pliku: " << fileName << "\n";
+    }
+    cout << "Czy wyswietlic dane: " << (showData == 'y' ? "tak" : "nie") << "\n\n";
+    cout << "========================================\n\n";
+
     // Tworzenie obiektow
+    cout << "[ ] Tworzenie obiektow...";
     Arrays** tablice = new Arrays * [dataQuantity];
     SortingAlgorithms** sortowanieTablicLosowych = new SortingAlgorithms * [dataQuantity];
     SortingAlgorithms** sortowanieTablicRosnacych = new SortingAlgorithms * [dataQuantity];
@@ -80,24 +96,11 @@ int main()
         przeszukiwanieTablicRosnacych[i] = new SearchingAlgorithms(tablice[i]->getArray(1), (i + 1) * dataSize, searchingValue);
         przeszukiwanieTablicMalejacych[i] = new SearchingAlgorithms(tablice[i]->getArray(2), (i + 1) * dataSize, searchingValue);
     }
-
-    // Wyswietlenie podsumowania wyborow uzytkownika
-    system("cls");
-    cout << (char)(175) << " Podsumowanie wyborow:\n";
-    cout << "Liczba tablic do wygenerowania: " << dataQuantity << "\n";
-    cout << "Liczba elementow pierwszej tablicy: " << dataSize << "\n";
-    cout << "Minimalna wartosc elementu w tablicy: " << dataMin << "\n";
-    cout << "Maksymalna wartosc elementu w tablicy: " << dataMax << "\n";
-    cout << "Wyszukiwana wartosc dla algorytmow wyszukiwania: " << searchingValue << "\n";
-    cout << "Czy zapisac dane do pliku: " << (saveToFile == 'y' ? "tak" : "nie") << "\n";
-    if (saveToFile == 'y') {
-        cout << "Nazwa pliku: " << fileName << "\n";
-    }
-    cout << "Czy wyswietlic dane: " << (showData == 'y' ? "tak" : "nie") << "\n\n";
-    cout << "========================================\n\n";
+    cout << "\r[X] Obiekty stworzone!   \n";
 
     // Zapis danych do pliku
     if (saveToFile == 'y') {
+        cout << "[ ] Zapisywanie danych do pliku...";
         fileName.append(".txt");
         if (folderName.size() == 0)
             folderName = fileName;
@@ -106,36 +109,47 @@ int main()
             folderName.append(fileName);
         }
         data.open(folderName, ios::app);
-        data << "Typ tablicy;Wielkosc tablicy;Sortowanie babelkowe;Sortowanie przez wstawianie;Sortowanie przez scalanie;Wyszukiwanie liniowe;Wyszukiwanie binarne\n";
+        data << "Algorytm;Wielkosc tablicy;Wartosci losowo;Wartosci rosnaco;Wartosci malejaco\n";
         for (int i = 0; i < dataQuantity; i++) {
-            data << "losowa;";
+            data << "sortowanie babelkowe;";
             data << (i + 1) * dataSize << ";";
             data << sortowanieTablicLosowych[i]->getDominantOperations(0) << ";";
-            data << sortowanieTablicLosowych[i]->getDominantOperations(1) << ";";
-            data << sortowanieTablicLosowych[i]->getDominantOperations(2) << ";";
-            data << przeszukiwanieTablicLosowych[i]->getDominantOperations(0) << ";";
-            data << przeszukiwanieTablicLosowych[i]->getDominantOperations(1) << "\n";
-        }
-        for (int i = 0; i < dataQuantity; i++) {
-            data << "rosnaca;";
-            data << (i + 1) * dataSize << ";";
             data << sortowanieTablicRosnacych[i]->getDominantOperations(0) << ";";
-            data << sortowanieTablicRosnacych[i]->getDominantOperations(1) << ";";
-            data << sortowanieTablicRosnacych[i]->getDominantOperations(2) << ";";
-            data << przeszukiwanieTablicRosnacych[i]->getDominantOperations(0) << ";";
-            data << przeszukiwanieTablicRosnacych[i]->getDominantOperations(1) << "\n";
+            data << sortowanieTablicMalejacych[i]->getDominantOperations(0) << "\n";
         }
         for (int i = 0; i < dataQuantity; i++) {
-            data << "malejaca;";
+            data << "sortowanie przez wstawianie;";
             data << (i + 1) * dataSize << ";";
-            data << sortowanieTablicMalejacych[i]->getDominantOperations(0) << ";";
-            data << sortowanieTablicMalejacych[i]->getDominantOperations(1) << ";";
-            data << sortowanieTablicMalejacych[i]->getDominantOperations(2) << ";";
-            data << przeszukiwanieTablicMalejacych[i]->getDominantOperations(0) << ";";
+            data << sortowanieTablicLosowych[i]->getDominantOperations(1) << ";";
+            data << sortowanieTablicRosnacych[i]->getDominantOperations(1) << ";";
+            data << sortowanieTablicMalejacych[i]->getDominantOperations(1) << "\n";
+        }
+        for (int i = 0; i < dataQuantity; i++) {
+            data << "sortowanie przez scalanie;";
+            data << (i + 1) * dataSize << ";";
+            data << sortowanieTablicLosowych[i]->getDominantOperations(2) << ";";
+            data << sortowanieTablicRosnacych[i]->getDominantOperations(2) << ";";
+            data << sortowanieTablicMalejacych[i]->getDominantOperations(2) << "\n";
+        }
+        for (int i = 0; i < dataQuantity; i++) {
+            data << "wyszukiwanie liniowe;";
+            data << (i + 1) * dataSize << ";";
+            data << przeszukiwanieTablicLosowych[i]->getDominantOperations(0) << ";";
+            data << przeszukiwanieTablicRosnacych[i]->getDominantOperations(0) << ";";
+            data << przeszukiwanieTablicMalejacych[i]->getDominantOperations(0) << "\n";
+        }
+        for (int i = 0; i < dataQuantity; i++) {
+            data << "wyszukiwanie binarne;";
+            data << (i + 1) * dataSize << ";";
+            data << przeszukiwanieTablicLosowych[i]->getDominantOperations(1) << ";";
+            data << przeszukiwanieTablicRosnacych[i]->getDominantOperations(1) << ";";
             data << przeszukiwanieTablicMalejacych[i]->getDominantOperations(1) << "\n";
         }
         data.close();
+        cout << "\r[X] Dane zapisane do pliku!       \n";
     }
+
+    cout << "\n========================================\n\n";
 
     // Wyswietlanie danych
     if (showData == 'y') {

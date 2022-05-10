@@ -1,0 +1,51 @@
+algorytm;Wielkosc tablicy;Wartosci losowo;Wartosci rosnaco;Wartosci malejaco
+sortowanie babelkowe;10;44;9;45
+sortowanie babelkowe;20;184;19;190
+sortowanie babelkowe;30;414;29;432
+sortowanie babelkowe;40;714;39;777
+sortowanie babelkowe;50;1210;49;1215
+sortowanie babelkowe;60;1704;59;1749
+sortowanie babelkowe;70;2370;69;2387
+sortowanie babelkowe;80;2970;79;3132
+sortowanie babelkowe;90;3939;89;3960
+sortowanie babelkowe;100;4859;99;4884
+sortowanie przez wstawianie;10;9;9;9
+sortowanie przez wstawianie;20;19;19;19
+sortowanie przez wstawianie;30;29;29;29
+sortowanie przez wstawianie;40;39;39;39
+sortowanie przez wstawianie;50;49;49;49
+sortowanie przez wstawianie;60;59;59;59
+sortowanie przez wstawianie;70;69;69;69
+sortowanie przez wstawianie;80;79;79;79
+sortowanie przez wstawianie;90;89;89;89
+sortowanie przez wstawianie;100;99;99;99
+sortowanie przez scalanie;10;9;9;9
+sortowanie przez scalanie;20;19;19;19
+sortowanie przez scalanie;30;29;29;29
+sortowanie przez scalanie;40;39;39;39
+sortowanie przez scalanie;50;49;49;49
+sortowanie przez scalanie;60;59;59;59
+sortowanie przez scalanie;70;69;69;69
+sortowanie przez scalanie;80;79;79;79
+sortowanie przez scalanie;90;89;89;89
+sortowanie przez scalanie;100;99;99;99
+wyszukiwanie liniowe;10;1;6;2
+wyszukiwanie liniowe;20;1;14;4
+wyszukiwanie liniowe;30;9;23;6
+wyszukiwanie liniowe;40;9;30;7
+wyszukiwanie liniowe;50;9;39;8
+wyszukiwanie liniowe;60;9;47;9
+wyszukiwanie liniowe;70;9;55;10
+wyszukiwanie liniowe;80;9;61;13
+wyszukiwanie liniowe;90;9;68;14
+wyszukiwanie liniowe;100;9;73;19
+wyszukiwanie binarne;10;1;2;1
+wyszukiwanie binarne;20;5;2;5
+wyszukiwanie binarne;30;5;2;5
+wyszukiwanie binarne;40;3;2;6
+wyszukiwanie binarne;50;6;4;6
+wyszukiwanie binarne;60;6;4;6
+wyszukiwanie binarne;70;1;4;7
+wyszukiwanie binarne;80;7;4;7
+wyszukiwanie binarne;90;4;2;7
+wyszukiwanie binarne;100;5;2;7

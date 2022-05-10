@@ -87,17 +87,17 @@ void SearchingAlgorithms::binarySearch() {
 	this->positions[1] = binarySearch2(this->array, this->searchingValue, 0, (this->arraySize)-1);
 }
 
-int SearchingAlgorithms::binarySearch2(int* array, int searchingValue, int start, int end) {
-	if (end >= start) {
+int SearchingAlgorithms::binarySearch2(int* array, int searchingValue, int left, int right) {
+	if (right >= left) {
 		this->dominantOperations[1]++;
-		int middleValue = (start + end) / 2;
+		int middleValue = (left + right) / 2;
 		if (array[middleValue] == searchingValue)
 			return middleValue;
 		else {
 			if (array[middleValue] > searchingValue)
-				return binarySearch2(array, searchingValue, start, middleValue - 1);
+				return binarySearch2(array, searchingValue, left, middleValue - 1);
 			else
-				return binarySearch2(array, searchingValue, middleValue + 1, end);
+				return binarySearch2(array, searchingValue, middleValue + 1, right);
 		}
 	}
 	return -1;
