@@ -4,98 +4,85 @@
 
 using namespace std;
 
-SortingAlgorithms::SortingAlgorithms() {
-	this->arrays = nullptr;
-	this->arraysSize = 0;
-	for (int i = 0; i < 3; i++)
-		this->dominantOperations[i] = 0;
+SortingAlgorithms::SortingAlgorithms(int *array, int size, bool sort, int algorithm) {
+	this->array = new int[size];
+	this->dominantOperations = 0;
+	this->algorithm = algorithm;
+	setArray(array, size);
+	if (sort) {
+		if (algorithm == 0)
+			this->sort(0);
+		else if (algorithm == 1)
+			this->sort(1);
+		else if (algorithm == 2)
+			this->sort(2);
+	}
 };
 
 SortingAlgorithms::~SortingAlgorithms() {
-	for (int i = 0; i < 3; i++)
-		delete[] this->arrays[i];
-	delete* this->arrays;
+	delete[] this->array;
 };
 
-SortingAlgorithms::SortingAlgorithms(int *array, int size, bool sort) {
-	this->arrays = new int *[size];
-	for (int i = 0; i < 3; i++) {
-		this->dominantOperations[i] = 0;
-	}
-	setArray(array, size);
-	if (sort) {
-		bubbleSort();
-		insertionSort();
-		mergeSort();
-	}
-};
-
-void SortingAlgorithms::setArray(int* array, int size) {
-	this->arraysSize = size;
-	for (int i = 0; i < 3; i++) {
-		this->arrays[i] = new int[this->arraysSize];
-		for (int j = 0; j < this->arraysSize; j++)
-			this->arrays[i][j] = array[j];
-	}
-};
-
-void SortingAlgorithms::printArrays() {
-	cout << "Bubble Sort:" << endl;
-	for (int i = 0; i < this->arraysSize; i++)
-		cout << this->arrays[0][i] << " ";
-	cout << endl << "Insertion Sort:" << endl;
-	for (int i = 0; i < this->arraysSize; i++)
-		cout << this->arrays[1][i] << " ";
-	cout << endl << "Merge Sort:" << endl;
-	for (int i = 0; i < this->arraysSize; i++)
-		cout << this->arrays[2][i] << " ";
-	cout << endl;
+void SortingAlgorithms::printArray() {
+	cout << "Array:\n";
+	for (int i = 0; i < this->arraySize; i++)
+		cout << this->array[i] << " ";
+	cout << "\n";
 };
 
 void SortingAlgorithms::printDominantOperations() {
-	cout << "Bubble Sort: " << dominantOperations[0] << endl;
-	cout << "Insertion Sort: " << dominantOperations[1] << endl;
-	cout << "Merge Sort: " << dominantOperations[2];
-	cout << endl;
+	cout << "Dominant operations: " << dominantOperations << "\n";
 };
 
-int* SortingAlgorithms::getArray(int type) {
-	if (this->arrays == nullptr)
-		return nullptr;
-	else {
-		if (type == 0)
-			return this->arrays[0];
-		else if (type == 1)
-			return this->arrays[1];
-		else if (type == 2)
-			return this->arrays[2];
-		else
-			return nullptr;
-	}
+void SortingAlgorithms::printAlgorithm() {
+	cout << "Algorithm: " << getAlgorithm() << "\n";
+};
+
+int* SortingAlgorithms::getArray() {
+	return this->array;
 }
 
-int SortingAlgorithms::getDominantOperations(int type) {
-	if (type == 0)
-		return this->dominantOperations[0];
-	else if (type == 1)
-		return this->dominantOperations[1];
-	else if (type == 2)
-		return this->dominantOperations[2];
-	else
-		return -1;
+unsigned long long SortingAlgorithms::getDominantOperations() {
+	return this->dominantOperations;
 }
 
-void SortingAlgorithms::bubbleSort() {
+string SortingAlgorithms::getAlgorithm() {
+	if (this->algorithm == 0)
+		return "bubbleSort";
+	else if (this->algorithm == 1)
+		return "insertionSort";
+	else if (this->algorithm == 2)
+		return "mergeSort";
+}
+
+void SortingAlgorithms::setArray(int* array, int size) {
+	this->arraySize = size;
+	this->array = new int[this->arraySize];
+	for (int i = 0; i < this->arraySize; i++)
+		this->array[i] = array[i];
+};
+
+void SortingAlgorithms::sort(int algorithm) {
+	this->algorithm = algorithm;
+	if (algorithm == 0)
+		bubbleSort(this->array, this->arraySize);
+	else if (algorithm == 1)
+		insertionSort(this->array, this->arraySize);
+	else if (algorithm == 2)
+		mergeSort(this->array, 0, (this->arraySize) - 1);
+}
+
+void SortingAlgorithms::bubbleSort(int* array, int size) {
 	int temp;
 	bool flag;
-	for (int i = 0; i < this->arraysSize; i++) {
+	for (int i = 0; i < size; i++) {
 		flag = true;
-		for (int j = 0; j < this->arraysSize - i - 1; j++) {
-			this->dominantOperations[0]++;
-			if (this->arrays[0][j] > this->arrays[0][j + 1]) {
-				temp = this->arrays[0][j];
-				this->arrays[0][j] = this->arrays[0][j + 1];
-				this->arrays[0][j + 1] = temp;
+		for (int j = 0; j < size - i - 1; j++) {
+			this->dominantOperations++;
+			if (array[j] > array[j + 1]) {
+				temp = array[j];
+				array[j] = array[j + 1];
+				array[j + 1] = temp;
 				flag = false;
 			}
 		}
@@ -104,30 +91,29 @@ void SortingAlgorithms::bubbleSort() {
 	}
 }
 
-void SortingAlgorithms::insertionSort() {
+void SortingAlgorithms::insertionSort(int* array, int size) {
 	int dominantOperations[2] = { 0,0 };
 	bool flag;
 	int i, key, j;
-	for (i = 1; i < this->arraysSize; i++) {
+	for (i = 1; i < size; i++) {
 		flag = false;
-		key = this->arrays[1][i];
+		key = array[i];
 		j = i - 1;
 		dominantOperations[0]++;
-		while (j >= 0 && this->arrays[1][j] > key) {
+		while (j >= 0 && array[j] > key) {
 			flag = true;
 			dominantOperations[1]++;
-			this->arrays[1][j + 1] = this->arrays[1][j];
+			array[j + 1] = array[j];
 			j = j - 1;
 		}
 		if (flag)
 			dominantOperations[1]--;
-		this->arrays[1][j + 1] = key;
+		array[j + 1] = key;
 	}
-	this->dominantOperations[1] = dominantOperations[0] + dominantOperations[1];
+	this->dominantOperations = dominantOperations[0] + dominantOperations[1];
 }
 
 void SortingAlgorithms::merge(int* array, int left, int middleValue, int right) {
-	this->dominantOperations[2]++;
 	int i, j, k;
 	int n1 = middleValue - left + 1;
 	int n2 = right - middleValue;
@@ -142,6 +128,7 @@ void SortingAlgorithms::merge(int* array, int left, int middleValue, int right) 
 	k = left;
 	while (i < n1 && j < n2)
 	{
+		this->dominantOperations++;
 		if (Left[i] <= Right[j])
 		{
 			array[k] = Left[i];
@@ -156,28 +143,26 @@ void SortingAlgorithms::merge(int* array, int left, int middleValue, int right) 
 	}
 	while (i < n1)
 	{
+		this->dominantOperations++;
 		array[k] = Left[i];
 		i++;
 		k++;
 	}
 	while (j < n2)
 	{
+		this->dominantOperations++;
 		array[k] = Right[j];
 		j++;
 		k++;
 	}
 }
 
-void SortingAlgorithms::mergeSort() {
-	mergeSort2(this->arrays[2], 0, (this->arraysSize) - 1);
-}
-
-void SortingAlgorithms::mergeSort2(int* array, int left, int right) {
+void SortingAlgorithms::mergeSort(int* array, int left, int right) {
 	if (left < right)
 	{
 		int middleValue = left + (right - left) / 2;
-		mergeSort2(array, left, middleValue);
-		mergeSort2(array, middleValue + 1, right);
+		mergeSort(array, left, middleValue);
+		mergeSort(array, middleValue + 1, right);
 		merge(array, left, middleValue, right);
 	}
 }

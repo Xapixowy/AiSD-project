@@ -1,22 +1,28 @@
 #pragma once
+
+#include <string>
+
 class SortingAlgorithms
 {
-	int** arrays;
-	int arraysSize;
-	int dominantOperations[3];
+	int* array;
+	int arraySize;
+	unsigned long long dominantOperations;
+	int algorithm;
+	
+	void bubbleSort(int* array, int size);
+	void insertionSort(int* array, int size);
 	void merge(int* array, int left, int middleValue, int right);
-	void mergeSort2(int* array, int left, int right);
+	void mergeSort(int* array, int left, int right);
 public:
-	SortingAlgorithms();
-	SortingAlgorithms(int* array, int size, bool sort=true);
+	SortingAlgorithms(int* array, int size, bool sort=true, int algorithm = 2);
 	~SortingAlgorithms();
-	void setArray(int* array, int size);
-	void printArrays();
+	void printArray();
 	void printDominantOperations();
-	int* getArray(int type);
-	int getDominantOperations(int type);
-	void bubbleSort();
-	void insertionSort();
-	void mergeSort();
+	void printAlgorithm();
+	int* getArray();
+	unsigned long long getDominantOperations();
+	std::string getAlgorithm();
+	void setArray(int* array, int size);
+	void sort(int algorithm=2);
 };
 

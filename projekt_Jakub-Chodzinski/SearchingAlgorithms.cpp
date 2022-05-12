@@ -4,101 +4,105 @@
 
 using namespace std;
 
-SearchingAlgorithms::SearchingAlgorithms(int* array, int size, int searchingValue, bool search) {
+SearchingAlgorithms::SearchingAlgorithms(int* array, int size, int searchingValue, bool search, int algorithm) {
+	this->dominantOperations = 0;
+	this->algorithm = algorithm;
 	setArray(array, size);
 	setSearchingValue(searchingValue);
-	for (int i = 0; i < 2; i++) {
-		this->dominantOperations[i] = 0;
-	}
+	this->position = -1;
 	if (search) {
-		linearSearch();
-		binarySearch();
+		if (algorithm == 0)
+			this->search(0);
+		else if (algorithm == 1)
+			this->search(1);
 	}
 };
 
 SearchingAlgorithms::~SearchingAlgorithms() {
-	delete this->array;
+	delete[] this->array;
+};
+
+void SearchingAlgorithms::printArray() {
+	cout << "Array:\n";
+	for (int i = 0; i < this->arraySize; i++)
+		cout << this->array[i] << " ";
+	cout << "\n";
+};
+
+void SearchingAlgorithms::printPosition() {
+	cout << "Position: " << position << "\n";
+};
+
+void SearchingAlgorithms::printDominantOperations() {
+	cout << "Dominant operations: " << dominantOperations << "\n";
+};
+
+void SearchingAlgorithms::printAlgorithm() {
+	cout << "Algorithm: " << getAlgorithm() << "\n";
 };
 
 int* SearchingAlgorithms::getArray() {
 	return this->array;
 }
 
-int SearchingAlgorithms::getPositions(int type) {
-	if (type == 0)
-		return this->positions[0];
-	else if (type == 1)
-		return this->positions[1];
-	else
-		return -1;
+int SearchingAlgorithms::getPosition() {
+	return this->position;
 }
 
-int SearchingAlgorithms::getDominantOperations(int type) {
-	if (type == 0)
-		return this->dominantOperations[0];
-	else if (type == 1)
-		return this->dominantOperations[1];
-	else
-		return -1;
+unsigned long long SearchingAlgorithms::getDominantOperations() {
+	return this->dominantOperations;
 }
 
+string SearchingAlgorithms::getAlgorithm() {
+	if (this->algorithm == 0)
+		return "linearSearch";
+	else if (this->algorithm == 1)
+		return "BinarySearch";
+}
 
 void SearchingAlgorithms::setArray(int* array, int size) {
-	this->array = array;
 	this->arraySize = size;
+	this->array = new int[this->arraySize];
+	for (int i = 0; i < this->arraySize; i++)
+		this->array[i] = array[i];
 };
 
 void SearchingAlgorithms::setSearchingValue(int searchingValue) {
 	this->searchingValue = searchingValue;
-	for (int i = 0; i < 2; i++) {
-		this->positions[i] = -1;
-	}
+	this->position = -1;
 };
 
-void SearchingAlgorithms::printArray() {
-	for (int i = 0; i < this->arraySize; i++)
-		cout << this->array[i] << " ";
-	cout << endl;
-};
+void SearchingAlgorithms::search(int algorithm) {
+	this->algorithm = algorithm;
+	this->position = -1;
+	if (this->algorithm ==0)
+		this->position = linearSearch(this->array, this->searchingValue, this->arraySize);
+	else if (this->algorithm == 1)
+		this->position = binarySearch(this->array, this->searchingValue, 0, (this->arraySize) - 1);
+}
 
-void SearchingAlgorithms::printPositions() {
-	cout << "Linear Search: " << positions[0] << endl;
-	cout << "Binary Search: " << positions[1] << endl;
-	cout << endl;
-};
-
-void SearchingAlgorithms::printDominantOperations() {
-	cout << "Linear Search: " << dominantOperations[0] << endl;
-	cout << "Binary Search: " << dominantOperations[1] << endl;
-	cout << endl;
-};
-
-void SearchingAlgorithms::linearSearch() {
-	for (int i = 0; i < this->arraySize; i++) {
-		this->dominantOperations[0]++;
-		if (this->array[i] == this->searchingValue) {
-			this->positions[0] = i;
+int SearchingAlgorithms::linearSearch(int* array, int searchingValue, int size) {
+	int position = -1;
+	for (int i = 0; i < size; i++) {
+		this->dominantOperations++;
+		if (array[i] == searchingValue) {
+			position = i;
 			break;
 		}
 	}
+	return position;
 }
 
-void SearchingAlgorithms::binarySearch() {
-	this->positions[1] = binarySearch2(this->array, this->searchingValue, 0, (this->arraySize)-1);
-}
-
-int SearchingAlgorithms::binarySearch2(int* array, int searchingValue, int left, int right) {
-	if (right >= left) {
-		this->dominantOperations[1]++;
-		int middleValue = (left + right) / 2;
-		if (array[middleValue] == searchingValue)
-			return middleValue;
-		else {
-			if (array[middleValue] > searchingValue)
-				return binarySearch2(array, searchingValue, left, middleValue - 1);
-			else
-				return binarySearch2(array, searchingValue, middleValue + 1, right);
-		}
+int SearchingAlgorithms::binarySearch(int* array, int searchingValue, int left, int right) {
+	while (left <= right) {
+		this->dominantOperations++;
+		int middle = left + (right - left) / 2;
+		if (array[middle] == searchingValue)
+			return middle;
+		if (array[middle] < searchingValue)
+			left = middle + 1;
+		else
+			right = middle - 1;
 	}
 	return -1;
 }

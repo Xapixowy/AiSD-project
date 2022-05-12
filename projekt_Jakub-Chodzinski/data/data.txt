@@ -1,501 +1,501 @@
 Algorytm;Wielkosc tablicy;Wartosci losowo;Wartosci rosnaco;Wartosci malejaco
-sortowanie babelkowe;100;4935;99;4950
-sortowanie babelkowe;200;19197;199;19897
-sortowanie babelkowe;300;44220;299;44847
-sortowanie babelkowe;400;79734;399;79794
-sortowanie babelkowe;500;122539;499;124744
-sortowanie babelkowe;600;179510;599;179694
-sortowanie babelkowe;700;243272;699;244640
-sortowanie babelkowe;800;319104;799;319590
-sortowanie babelkowe;900;404397;899;404540
-sortowanie babelkowe;1000;499310;999;499445
-sortowanie babelkowe;1100;604099;1099;604359
-sortowanie babelkowe;1200;716079;1199;719309
-sortowanie babelkowe;1300;842754;1299;844214
-sortowanie babelkowe;1400;977589;1399;979164
-sortowanie babelkowe;1500;1121475;1499;1124060
-sortowanie babelkowe;1600;1277660;1599;1278990
-sortowanie babelkowe;1700;1441939;1699;1443919
-sortowanie babelkowe;1800;1607319;1799;1618869
-sortowanie babelkowe;1900;1803585;1899;1803897
-sortowanie babelkowe;2000;1997919;1999;1998847
-sortowanie babelkowe;2100;2201934;2099;2203797
-sortowanie babelkowe;2200;2418624;2199;2418690
-sortowanie babelkowe;2300;2641705;2299;2643619
-sortowanie babelkowe;2400;2877369;2399;2878475
-sortowanie babelkowe;2500;3123189;2499;3123399
-sortowanie babelkowe;2600;3374959;2599;3378322
-sortowanie babelkowe;2700;3643350;2699;3643350
-sortowanie babelkowe;2800;3913140;2799;3918300
-sortowanie babelkowe;2900;4195800;2899;4203250
-sortowanie babelkowe;3000;4497834;2999;4498149
-sortowanie babelkowe;3100;4802175;3099;4803044
-sortowanie babelkowe;3200;5115240;3199;5117965
-sortowanie babelkowe;3300;5439609;3299;5442854
-sortowanie babelkowe;3400;5775297;3399;5777772
-sortowanie babelkowe;3500;6121480;3499;6122754
-sortowanie babelkowe;3600;6472205;3599;6477704
-sortowanie babelkowe;3700;6837794;3699;6842622
-sortowanie babelkowe;3800;7215019;3799;7217539
-sortowanie babelkowe;3900;7601097;3899;7602455
-sortowanie babelkowe;4000;7997259;3999;7997370
-sortowanie babelkowe;4100;8401869;4099;8401915
-sortowanie babelkowe;4200;8807889;4199;8816865
-sortowanie babelkowe;4300;9238479;4299;9241769
-sortowanie babelkowe;4400;9675025;4399;9676672
-sortowanie babelkowe;4500;10118834;4499;10121525
-sortowanie babelkowe;4600;10571259;4599;10576425
-sortowanie babelkowe;4700;11037499;4699;11041984
-sortowanie babelkowe;4800;11515830;4799;11516859
-sortowanie babelkowe;4900;11989830;4899;12001809
-sortowanie babelkowe;5000;12491505;4999;12496680
-sortowanie babelkowe;5100;12983340;5099;13001630
-sortowanie babelkowe;5200;13515747;5199;13516497
-sortowanie babelkowe;5300;14041609;5299;14041647
-sortowanie babelkowe;5400;14568915;5399;14576597
-sortowanie babelkowe;5500;15118064;5499;15121509
-sortowanie babelkowe;5600;15669819;5599;15676420
-sortowanie babelkowe;5700;16224005;5699;16241370
-sortowanie babelkowe;5800;16808844;5799;16814955
-sortowanie babelkowe;5900;17390422;5899;17399839
-sortowanie babelkowe;6000;17993259;5999;17994654
-sortowanie babelkowe;6100;18599100;6099;18599535
-sortowanie babelkowe;6200;19213819;6199;19215009
-sortowanie babelkowe;6300;19833975;6299;19839834
-sortowanie babelkowe;6400;20474454;6399;20474589
-sortowanie babelkowe;6500;21119335;6499;21119472
-sortowanie babelkowe;6600;21772784;6599;21774072
-sortowanie babelkowe;6700;22435545;6699;22438949
-sortowanie babelkowe;6800;23108472;6799;23113825
-sortowanie babelkowe;6900;23798310;6899;23798390
-sortowanie babelkowe;7000;24491550;6999;24493340
-sortowanie babelkowe;7100;25186399;7099;25198210
-sortowanie babelkowe;7200;25907754;7199;25912914
-sortowanie babelkowe;7300;26614554;7299;26637864
-sortowanie babelkowe;7400;27372559;7399;27373599
-sortowanie babelkowe;7500;28114464;7499;28118400
-sortowanie babelkowe;7600;28852764;7599;28873350
-sortowanie babelkowe;7700;29629825;7699;29639070
-sortowanie babelkowe;7800;30408099;7799;30413822
-sortowanie babelkowe;7900;31197647;7899;31198704
-sortowanie babelkowe;8000;31990644;7999;31992679
-sortowanie babelkowe;8100;32791220;8099;32797547
-sortowanie babelkowe;8200;33607385;8199;33612414
-sortowanie babelkowe;8300;34424197;8299;34437109
-sortowanie babelkowe;8400;35267285;8399;35271795
-sortowanie babelkowe;8500;36111159;8499;36116564
-sortowanie babelkowe;8600;36965260;8599;36971872
-sortowanie babelkowe;8700;37833864;8699;37836734
-sortowanie babelkowe;8800;38692164;8799;38711684
-sortowanie babelkowe;8900;39560929;8899;39596364
-sortowanie babelkowe;9000;40485489;8999;40491222
-sortowanie babelkowe;9100;41395197;9099;41395985
-sortowanie babelkowe;9200;42298195;9199;42310249
-sortowanie babelkowe;9300;43226820;9299;43234994
-sortowanie babelkowe;9400;44151647;9399;44171559
-sortowanie babelkowe;9500;45112375;9499;45116422
-sortowanie babelkowe;9600;46067325;9599;46071284
-sortowanie babelkowe;9700;47023860;9699;47035200
-sortowanie babelkowe;9800;47987605;9799;48010150
-sortowanie babelkowe;9900;48995000;9899;48996969
-sortowanie babelkowe;10000;49974900;9999;49991919
-sortowanie przez wstawianie;100;2236;99;4893
-sortowanie przez wstawianie;200;9646;199;19702
-sortowanie przez wstawianie;300;21520;299;44437
-sortowanie przez wstawianie;400;39778;399;79026
-sortowanie przez wstawianie;500;58677;499;123539
-sortowanie przez wstawianie;600;87409;599;177981
-sortowanie przez wstawianie;700;118721;699;242318
-sortowanie przez wstawianie;800;160034;799;316532
-sortowanie przez wstawianie;900;200645;899;400615
-sortowanie przez wstawianie;1000;253024;999;494470
-sortowanie przez wstawianie;1100;307272;1099;598392
-sortowanie przez wstawianie;1200;357479;1199;712215
-sortowanie przez wstawianie;1300;414218;1299;835922
-sortowanie przez wstawianie;1400;480274;1399;969560
-sortowanie przez wstawianie;1500;549322;1499;1113051
-sortowanie przez wstawianie;1600;626270;1599;1266419
-sortowanie przez wstawianie;1700;707501;1699;1429745
-sortowanie przez wstawianie;1800;789461;1799;1602915
-sortowanie przez wstawianie;1900;901049;1899;1786214
-sortowanie przez wstawianie;2000;1003901;1999;1979222
-sortowanie przez wstawianie;2100;1100733;2099;2182092
-sortowanie przez wstawianie;2200;1209508;2199;2394973
-sortowanie przez wstawianie;2300;1322715;2299;2617746
-sortowanie przez wstawianie;2400;1445073;2399;2850331
-sortowanie przez wstawianie;2500;1569432;2499;3092861
-sortowanie przez wstawianie;2600;1696519;2599;3345176
-sortowanie przez wstawianie;2700;1786974;2699;3607703
-sortowanie przez wstawianie;2800;1917959;2799;3879949
-sortowanie przez wstawianie;2900;2064485;2899;4162082
-sortowanie przez wstawianie;3000;2216864;2999;4454158
-sortowanie przez wstawianie;3100;2379735;3099;4756192
-sortowanie przez wstawianie;3200;2546446;3199;5068066
-sortowanie przez wstawianie;3300;2713920;3299;5389732
-sortowanie przez wstawianie;3400;2884127;3399;5721351
-sortowanie przez wstawianie;3500;3103341;3499;6063012
-sortowanie przez wstawianie;3600;3284265;3599;6414492
-sortowanie przez wstawianie;3700;3462181;3699;6775762
-sortowanie przez wstawianie;3800;3647346;3799;7147089
-sortowanie przez wstawianie;3900;3856209;3899;7528300
-sortowanie przez wstawianie;4000;4049634;3999;7919396
-sortowanie przez wstawianie;4100;4190744;4099;8319858
-sortowanie przez wstawianie;4200;4399739;4199;8730670
-sortowanie przez wstawianie;4300;4609980;4299;9151413
-sortowanie przez wstawianie;4400;4815143;4399;9582126
-sortowanie przez wstawianie;4500;5018486;4499;10022699
-sortowanie przez wstawianie;4600;5224755;4599;10473134
-sortowanie przez wstawianie;4700;5456870;4699;10933681
-sortowanie przez wstawianie;4800;5695737;4799;11403980
-sortowanie przez wstawianie;4900;5919318;4899;11884137
-sortowanie przez wstawianie;5000;6168452;4999;12374239
-sortowanie przez wstawianie;5100;6446651;5099;12874206
-sortowanie przez wstawianie;5200;6678557;5199;13384074
-sortowanie przez wstawianie;5300;7022608;5299;13902949
-sortowanie przez wstawianie;5400;7299000;5399;14432557
-sortowanie przez wstawianie;5500;7560320;5499;14972151
-sortowanie przez wstawianie;5600;7849120;5599;15521678
-sortowanie przez wstawianie;5700;8135758;5699;16081117
-sortowanie przez wstawianie;5800;8280826;5799;16650721
-sortowanie przez wstawianie;5900;8571258;5899;17229842
-sortowanie przez wstawianie;6000;8867734;5999;17818764
-sortowanie przez wstawianie;6100;9158232;6099;18417758
-sortowanie przez wstawianie;6200;9570109;6199;19026242
-sortowanie przez wstawianie;6300;9897623;6299;19645064
-sortowanie przez wstawianie;6400;10204898;6399;20273692
-sortowanie przez wstawianie;6500;10551338;6499;20912304
-sortowanie przez wstawianie;6600;10762209;6599;21561849
-sortowanie przez wstawianie;6700;11115343;6699;22220174
-sortowanie przez wstawianie;6800;11475008;6799;22888393
-sortowanie przez wstawianie;6900;11838416;6899;23566483
-sortowanie przez wstawianie;7000;11896979;6999;24254009
-sortowanie przez wstawianie;7100;12218664;7099;24952008
-sortowanie przez wstawianie;7200;12606136;7199;25659768
-sortowanie przez wstawianie;7300;12909479;7299;26377455
-sortowanie przez wstawianie;7400;13672251;7399;27103941
-sortowanie przez wstawianie;7500;14079380;7499;27841606
-sortowanie przez wstawianie;7600;14422554;7599;28589105
-sortowanie przez wstawianie;7700;14673202;7699;29348021
-sortowanie przez wstawianie;7800;15095747;7799;30115187
-sortowanie przez wstawianie;7900;15483063;7899;30892437
-sortowanie przez wstawianie;8000;15683267;7999;31678537
-sortowanie przez wstawianie;8100;16096133;8099;32475579
-sortowanie przez wstawianie;8200;16468762;8199;33282506
-sortowanie przez wstawianie;8300;17194489;8299;34099685
-sortowanie przez wstawianie;8400;17663153;8399;34926425
-sortowanie przez wstawianie;8500;18049137;8499;35762906
-sortowanie przez wstawianie;8600;18180556;8599;36610959
-sortowanie przez wstawianie;8700;18605158;8699;37467281
-sortowanie przez wstawianie;8800;19020676;8799;38333522
-sortowanie przez wstawianie;8900;19703451;8899;39208206
-sortowanie przez wstawianie;9000;20133470;8999;40094184
-sortowanie przez wstawianie;9100;20591940;9099;40990315
-sortowanie przez wstawianie;9200;20930703;9199;41896444
-sortowanie przez wstawianie;9300;21374723;9299;42812174
-sortowanie przez wstawianie;9400;21795136;9399;43738283
-sortowanie przez wstawianie;9500;22310534;9499;44673810
-sortowanie przez wstawianie;9600;22750409;9599;45619510
-sortowanie przez wstawianie;9700;23011509;9699;46573053
-sortowanie przez wstawianie;9800;23492450;9799;47538342
-sortowanie przez wstawianie;9900;24113284;9899;48514841
-sortowanie przez wstawianie;10000;24597493;9999;49499887
-sortowanie przez scalanie;100;99;99;99
-sortowanie przez scalanie;200;199;199;199
-sortowanie przez scalanie;300;299;299;299
-sortowanie przez scalanie;400;399;399;399
-sortowanie przez scalanie;500;499;499;499
-sortowanie przez scalanie;600;599;599;599
-sortowanie przez scalanie;700;699;699;699
-sortowanie przez scalanie;800;799;799;799
-sortowanie przez scalanie;900;899;899;899
-sortowanie przez scalanie;1000;999;999;999
-sortowanie przez scalanie;1100;1099;1099;1099
-sortowanie przez scalanie;1200;1199;1199;1199
-sortowanie przez scalanie;1300;1299;1299;1299
-sortowanie przez scalanie;1400;1399;1399;1399
-sortowanie przez scalanie;1500;1499;1499;1499
-sortowanie przez scalanie;1600;1599;1599;1599
-sortowanie przez scalanie;1700;1699;1699;1699
-sortowanie przez scalanie;1800;1799;1799;1799
-sortowanie przez scalanie;1900;1899;1899;1899
-sortowanie przez scalanie;2000;1999;1999;1999
-sortowanie przez scalanie;2100;2099;2099;2099
-sortowanie przez scalanie;2200;2199;2199;2199
-sortowanie przez scalanie;2300;2299;2299;2299
-sortowanie przez scalanie;2400;2399;2399;2399
-sortowanie przez scalanie;2500;2499;2499;2499
-sortowanie przez scalanie;2600;2599;2599;2599
-sortowanie przez scalanie;2700;2699;2699;2699
-sortowanie przez scalanie;2800;2799;2799;2799
-sortowanie przez scalanie;2900;2899;2899;2899
-sortowanie przez scalanie;3000;2999;2999;2999
-sortowanie przez scalanie;3100;3099;3099;3099
-sortowanie przez scalanie;3200;3199;3199;3199
-sortowanie przez scalanie;3300;3299;3299;3299
-sortowanie przez scalanie;3400;3399;3399;3399
-sortowanie przez scalanie;3500;3499;3499;3499
-sortowanie przez scalanie;3600;3599;3599;3599
-sortowanie przez scalanie;3700;3699;3699;3699
-sortowanie przez scalanie;3800;3799;3799;3799
-sortowanie przez scalanie;3900;3899;3899;3899
-sortowanie przez scalanie;4000;3999;3999;3999
-sortowanie przez scalanie;4100;4099;4099;4099
-sortowanie przez scalanie;4200;4199;4199;4199
-sortowanie przez scalanie;4300;4299;4299;4299
-sortowanie przez scalanie;4400;4399;4399;4399
-sortowanie przez scalanie;4500;4499;4499;4499
-sortowanie przez scalanie;4600;4599;4599;4599
-sortowanie przez scalanie;4700;4699;4699;4699
-sortowanie przez scalanie;4800;4799;4799;4799
-sortowanie przez scalanie;4900;4899;4899;4899
-sortowanie przez scalanie;5000;4999;4999;4999
-sortowanie przez scalanie;5100;5099;5099;5099
-sortowanie przez scalanie;5200;5199;5199;5199
-sortowanie przez scalanie;5300;5299;5299;5299
-sortowanie przez scalanie;5400;5399;5399;5399
-sortowanie przez scalanie;5500;5499;5499;5499
-sortowanie przez scalanie;5600;5599;5599;5599
-sortowanie przez scalanie;5700;5699;5699;5699
-sortowanie przez scalanie;5800;5799;5799;5799
-sortowanie przez scalanie;5900;5899;5899;5899
-sortowanie przez scalanie;6000;5999;5999;5999
-sortowanie przez scalanie;6100;6099;6099;6099
-sortowanie przez scalanie;6200;6199;6199;6199
-sortowanie przez scalanie;6300;6299;6299;6299
-sortowanie przez scalanie;6400;6399;6399;6399
-sortowanie przez scalanie;6500;6499;6499;6499
-sortowanie przez scalanie;6600;6599;6599;6599
-sortowanie przez scalanie;6700;6699;6699;6699
-sortowanie przez scalanie;6800;6799;6799;6799
-sortowanie przez scalanie;6900;6899;6899;6899
-sortowanie przez scalanie;7000;6999;6999;6999
-sortowanie przez scalanie;7100;7099;7099;7099
-sortowanie przez scalanie;7200;7199;7199;7199
-sortowanie przez scalanie;7300;7299;7299;7299
-sortowanie przez scalanie;7400;7399;7399;7399
-sortowanie przez scalanie;7500;7499;7499;7499
-sortowanie przez scalanie;7600;7599;7599;7599
-sortowanie przez scalanie;7700;7699;7699;7699
-sortowanie przez scalanie;7800;7799;7799;7799
-sortowanie przez scalanie;7900;7899;7899;7899
-sortowanie przez scalanie;8000;7999;7999;7999
-sortowanie przez scalanie;8100;8099;8099;8099
-sortowanie przez scalanie;8200;8199;8199;8199
-sortowanie przez scalanie;8300;8299;8299;8299
-sortowanie przez scalanie;8400;8399;8399;8399
-sortowanie przez scalanie;8500;8499;8499;8499
-sortowanie przez scalanie;8600;8599;8599;8599
-sortowanie przez scalanie;8700;8699;8699;8699
-sortowanie przez scalanie;8800;8799;8799;8799
-sortowanie przez scalanie;8900;8899;8899;8899
-sortowanie przez scalanie;9000;8999;8999;8999
-sortowanie przez scalanie;9100;9099;9099;9099
-sortowanie przez scalanie;9200;9199;9199;9199
-sortowanie przez scalanie;9300;9299;9299;9299
-sortowanie przez scalanie;9400;9399;9399;9399
-sortowanie przez scalanie;9500;9499;9499;9499
-sortowanie przez scalanie;9600;9599;9599;9599
-sortowanie przez scalanie;9700;9699;9699;9699
-sortowanie przez scalanie;9800;9799;9799;9799
-sortowanie przez scalanie;9900;9899;9899;9899
-sortowanie przez scalanie;10000;9999;9999;9999
-wyszukiwanie liniowe;100;61;72;28
-wyszukiwanie liniowe;200;61;141;58
-wyszukiwanie liniowe;300;61;210;89
-wyszukiwanie liniowe;400;61;281;117
-wyszukiwanie liniowe;500;61;337;160
-wyszukiwanie liniowe;600;61;399;197
-wyszukiwanie liniowe;700;61;462;233
-wyszukiwanie liniowe;800;61;538;257
-wyszukiwanie liniowe;900;61;603;291
-wyszukiwanie liniowe;1000;161;705;286
-wyszukiwanie liniowe;1100;161;779;310
-wyszukiwanie liniowe;1200;161;846;342
-wyszukiwanie liniowe;1300;161;907;380
-wyszukiwanie liniowe;1400;161;976;410
-wyszukiwanie liniowe;1500;161;1048;437
-wyszukiwanie liniowe;1600;161;1116;469
-wyszukiwanie liniowe;1700;161;1184;501
-wyszukiwanie liniowe;1800;161;1255;530
-wyszukiwanie liniowe;1900;68;1298;593
-wyszukiwanie liniowe;2000;68;1368;622
-wyszukiwanie liniowe;2100;68;1435;655
-wyszukiwanie liniowe;2200;68;1503;686
-wyszukiwanie liniowe;2300;68;1573;716
-wyszukiwanie liniowe;2400;68;1648;740
-wyszukiwanie liniowe;2500;68;1719;769
-wyszukiwanie liniowe;2600;68;1789;799
-wyszukiwanie liniowe;2700;156;1813;860
-wyszukiwanie liniowe;2800;156;1878;893
-wyszukiwanie liniowe;2900;156;1949;921
-wyszukiwanie liniowe;3000;156;2021;949
-wyszukiwanie liniowe;3100;156;2095;975
-wyszukiwanie liniowe;3200;156;2166;1003
-wyszukiwanie liniowe;3300;156;2237;1030
-wyszukiwanie liniowe;3400;156;2303;1061
-wyszukiwanie liniowe;3500;410;2369;1098
-wyszukiwanie liniowe;3600;410;2435;1131
-wyszukiwanie liniowe;3700;410;2501;1164
-wyszukiwanie liniowe;3800;410;2570;1195
-wyszukiwanie liniowe;3900;410;2647;1217
-wyszukiwanie liniowe;4000;410;2716;1246
-wyszukiwanie liniowe;4100;165;2801;1278
-wyszukiwanie liniowe;4200;165;2875;1304
-wyszukiwanie liniowe;4300;165;2942;1336
-wyszukiwanie liniowe;4400;165;3008;1369
-wyszukiwanie liniowe;4500;165;3073;1403
-wyszukiwanie liniowe;4600;165;3139;1434
-wyszukiwanie liniowe;4700;37;3218;1436
-wyszukiwanie liniowe;4800;37;3290;1463
-wyszukiwanie liniowe;4900;37;3356;1497
-wyszukiwanie liniowe;5000;37;3431;1521
-wyszukiwanie liniowe;5100;37;3507;1545
-wyszukiwanie liniowe;5200;37;3564;1588
-wyszukiwanie liniowe;5300;160;3555;1688
-wyszukiwanie liniowe;5400;160;3631;1712
-wyszukiwanie liniowe;5500;160;3698;1745
-wyszukiwanie liniowe;5600;160;3771;1771
-wyszukiwanie liniowe;5700;160;3839;1802
-wyszukiwanie liniowe;5800;65;3993;1750
-wyszukiwanie liniowe;5900;65;4061;1782
-wyszukiwanie liniowe;6000;65;4135;1808
-wyszukiwanie liniowe;6100;65;4206;1837
-wyszukiwanie liniowe;6200;58;4213;1931
-wyszukiwanie liniowe;6300;58;4286;1957
-wyszukiwanie liniowe;6400;58;4352;1989
-wyszukiwanie liniowe;6500;58;4424;2015
-wyszukiwanie liniowe;6600;64;4523;2021
-wyszukiwanie liniowe;6700;64;4594;2050
-wyszukiwanie liniowe;6800;64;4668;2076
-wyszukiwanie liniowe;6900;64;4737;2105
-wyszukiwanie liniowe;7000;196;4808;2136
-wyszukiwanie liniowe;7100;196;4869;2174
-wyszukiwanie liniowe;7200;196;4943;2200
-wyszukiwanie liniowe;7300;196;5001;2241
-wyszukiwanie liniowe;7400;301;5061;2264
-wyszukiwanie liniowe;7500;301;5133;2292
-wyszukiwanie liniowe;7600;301;5196;2327
-wyszukiwanie liniowe;7700;48;5268;2352
-wyszukiwanie liniowe;7800;48;5338;2381
-wyszukiwanie liniowe;7900;48;5405;2412
-wyszukiwanie liniowe;8000;543;5490;2450
-wyszukiwanie liniowe;8100;543;5558;2482
-wyszukiwanie liniowe;8200;543;5619;2521
-wyszukiwanie liniowe;8300;146;5595;2610
-wyszukiwanie liniowe;8400;146;5671;2633
-wyszukiwanie liniowe;8500;146;5733;2668
-wyszukiwanie liniowe;8600;32;5913;2614
-wyszukiwanie liniowe;8700;32;5981;2645
-wyszukiwanie liniowe;8800;32;6046;2679
-wyszukiwanie liniowe;8900;180;6150;2666
-wyszukiwanie liniowe;9000;180;6219;2697
-wyszukiwanie liniowe;9100;180;6291;2724
-wyszukiwanie liniowe;9200;128;6337;2771
-wyszukiwanie liniowe;9300;128;6401;2803
-wyszukiwanie liniowe;9400;18;6336;2956
-wyszukiwanie liniowe;9500;18;6409;2981
-wyszukiwanie liniowe;9600;18;6469;3021
-wyszukiwanie liniowe;9700;138;6499;3090
-wyszukiwanie liniowe;9800;138;6572;3115
-wyszukiwanie liniowe;9900;114;6794;3010
-wyszukiwanie liniowe;10000;114;6865;3038
-wyszukiwanie binarne;100;7;6;7
-wyszukiwanie binarne;200;8;5;8
-wyszukiwanie binarne;300;9;6;9
-wyszukiwanie binarne;400;9;6;9
-wyszukiwanie binarne;500;9;7;9
-wyszukiwanie binarne;600;9;6;10
-wyszukiwanie binarne;700;10;7;10
-wyszukiwanie binarne;800;10;7;10
-wyszukiwanie binarne;900;10;6;10
-wyszukiwanie binarne;1000;10;7;10
-wyszukiwanie binarne;1100;10;5;11
-wyszukiwanie binarne;1200;10;7;11
-wyszukiwanie binarne;1300;10;6;11
-wyszukiwanie binarne;1400;10;6;11
-wyszukiwanie binarne;1500;10;6;11
-wyszukiwanie binarne;1600;2;6;11
-wyszukiwanie binarne;1700;11;6;11
-wyszukiwanie binarne;1800;11;6;11
-wyszukiwanie binarne;1900;11;4;11
-wyszukiwanie binarne;2000;11;4;11
-wyszukiwanie binarne;2100;10;4;12
-wyszukiwanie binarne;2200;11;4;12
-wyszukiwanie binarne;2300;11;4;12
-wyszukiwanie binarne;2400;12;4;12
-wyszukiwanie binarne;2500;11;8;12
-wyszukiwanie binarne;2600;11;8;12
-wyszukiwanie binarne;2700;11;6;12
-wyszukiwanie binarne;2800;12;6;12
-wyszukiwanie binarne;2900;12;7;12
-wyszukiwanie binarne;3000;2;7;12
-wyszukiwanie binarne;3100;12;7;12
-wyszukiwanie binarne;3200;6;7;12
-wyszukiwanie binarne;3300;12;4;12
-wyszukiwanie binarne;3400;12;4;12
-wyszukiwanie binarne;3500;11;7;12
-wyszukiwanie binarne;3600;2;7;12
-wyszukiwanie binarne;3700;12;7;12
-wyszukiwanie binarne;3800;12;7;12
-wyszukiwanie binarne;3900;12;4;12
-wyszukiwanie binarne;4000;12;4;12
-wyszukiwanie binarne;4100;12;4;13
-wyszukiwanie binarne;4200;12;4;13
-wyszukiwanie binarne;4300;12;4;13
-wyszukiwanie binarne;4400;12;4;13
-wyszukiwanie binarne;4500;12;4;13
-wyszukiwanie binarne;4600;12;4;13
-wyszukiwanie binarne;4700;12;4;13
-wyszukiwanie binarne;4800;13;4;13
-wyszukiwanie binarne;4900;13;4;13
-wyszukiwanie binarne;5000;12;4;13
-wyszukiwanie binarne;5100;13;7;13
-wyszukiwanie binarne;5200;12;4;13
-wyszukiwanie binarne;5300;12;6;13
-wyszukiwanie binarne;5400;1;7;13
-wyszukiwanie binarne;5500;13;7;13
-wyszukiwanie binarne;5600;13;7;13
-wyszukiwanie binarne;5700;13;7;13
-wyszukiwanie binarne;5800;13;7;13
-wyszukiwanie binarne;5900;13;7;13
-wyszukiwanie binarne;6000;13;7;13
-wyszukiwanie binarne;6100;12;7;13
-wyszukiwanie binarne;6200;12;4;13
-wyszukiwanie binarne;6300;13;4;13
-wyszukiwanie binarne;6400;13;4;13
-wyszukiwanie binarne;6500;13;4;13
-wyszukiwanie binarne;6600;13;4;13
-wyszukiwanie binarne;6700;2;4;13
-wyszukiwanie binarne;6800;1;4;13
-wyszukiwanie binarne;6900;13;4;13
-wyszukiwanie binarne;7000;13;4;13
-wyszukiwanie binarne;7100;13;4;13
-wyszukiwanie binarne;7200;13;4;13
-wyszukiwanie binarne;7300;13;4;13
-wyszukiwanie binarne;7400;13;4;13
-wyszukiwanie binarne;7500;9;4;13
-wyszukiwanie binarne;7600;9;4;13
-wyszukiwanie binarne;7700;13;4;13
-wyszukiwanie binarne;7800;13;4;13
-wyszukiwanie binarne;7900;13;4;13
-wyszukiwanie binarne;8000;13;4;13
-wyszukiwanie binarne;8100;3;4;13
-wyszukiwanie binarne;8200;13;4;14
-wyszukiwanie binarne;8300;13;7;14
-wyszukiwanie binarne;8400;13;7;14
-wyszukiwanie binarne;8500;14;7;14
-wyszukiwanie binarne;8600;13;7;14
-wyszukiwanie binarne;8700;12;4;14
-wyszukiwanie binarne;8800;13;4;14
-wyszukiwanie binarne;8900;2;7;14
-wyszukiwanie binarne;9000;13;7;14
-wyszukiwanie binarne;9100;13;7;14
-wyszukiwanie binarne;9200;14;7;14
-wyszukiwanie binarne;9300;14;7;14
-wyszukiwanie binarne;9400;6;7;14
-wyszukiwanie binarne;9500;14;7;14
-wyszukiwanie binarne;9600;14;7;14
-wyszukiwanie binarne;9700;13;6;14
-wyszukiwanie binarne;9800;1;6;14
-wyszukiwanie binarne;9900;8;4;14
-wyszukiwanie binarne;10000;13;4;14
+sortowanie babelkowe;1000;496014;999;499500
+sortowanie babelkowe;2000;1998594;1999;1999000
+sortowanie babelkowe;3000;4496904;2999;4498500
+sortowanie babelkowe;4000;7994997;3999;7998000
+sortowanie babelkowe;5000;12497035;4999;12497500
+sortowanie babelkowe;6000;17988999;5999;17997000
+sortowanie babelkowe;7000;24494015;6999;24496500
+sortowanie babelkowe;8000;31983910;7999;31996000
+sortowanie babelkowe;9000;40484915;8999;40495500
+sortowanie babelkowe;10000;49990722;9999;49995000
+sortowanie babelkowe;11000;60491340;10999;60494500
+sortowanie babelkowe;12000;71992515;11999;71994000
+sortowanie babelkowe;13000;84491789;12999;84493500
+sortowanie babelkowe;14000;97987005;13999;97993000
+sortowanie babelkowe;15000;112488405;14999;112492500
+sortowanie babelkowe;16000;127985895;15999;127992000
+sortowanie babelkowe;17000;144490372;16999;144491500
+sortowanie babelkowe;18000;161987084;17999;161991000
+sortowanie babelkowe;19000;180465300;18999;180490500
+sortowanie babelkowe;20000;199975465;19999;199990000
+sortowanie babelkowe;21000;220453454;20999;220489500
+sortowanie babelkowe;22000;241985172;21999;241989000
+sortowanie babelkowe;23000;264466764;22999;264488500
+sortowanie babelkowe;24000;287887424;23999;287988000
+sortowanie babelkowe;25000;312410472;24999;312487500
+sortowanie babelkowe;26000;337960894;25999;337987000
+sortowanie babelkowe;27000;364481550;26999;364486500
+sortowanie babelkowe;28000;391965090;27999;391986000
+sortowanie babelkowe;29000;420478597;28999;420485500
+sortowanie babelkowe;30000;449981760;29999;449985000
+sortowanie babelkowe;31000;480449255;30999;480484500
+sortowanie babelkowe;32000;511879347;31999;511984000
+sortowanie babelkowe;33000;544471719;32999;544483500
+sortowanie babelkowe;34000;577968465;33999;577983000
+sortowanie babelkowe;35000;612465847;34999;612482500
+sortowanie babelkowe;36000;647884539;35999;647982000
+sortowanie babelkowe;37000;684472320;36999;684481500
+sortowanie babelkowe;38000;721977172;37999;721981000
+sortowanie babelkowe;39000;760465622;38999;760480500
+sortowanie babelkowe;40000;799974747;39999;799980000
+sortowanie babelkowe;41000;840388549;40999;840479500
+sortowanie babelkowe;42000;881961422;41999;881979000
+sortowanie babelkowe;43000;924442989;42999;924478500
+sortowanie babelkowe;44000;967904847;43999;967978000
+sortowanie babelkowe;45000;1012468320;44999;1012477500
+sortowanie babelkowe;46000;1057913810;45999;1057977000
+sortowanie babelkowe;47000;1104393472;46999;1104476500
+sortowanie babelkowe;48000;1151938325;47999;1151976000
+sortowanie babelkowe;49000;1200465489;48999;1200475500
+sortowanie babelkowe;50000;1249973289;49999;1249975000
+sortowanie babelkowe;51000;1300437372;50999;1300474500
+sortowanie babelkowe;52000;1351970840;51999;1351974000
+sortowanie babelkowe;53000;1404463204;52999;1404473500
+sortowanie babelkowe;54000;1457475497;53999;1457973000
+sortowanie babelkowe;55000;1512449064;54999;1512472500
+sortowanie babelkowe;56000;1567953664;55999;1567972000
+sortowanie babelkowe;57000;1624418850;56999;1624471500
+sortowanie babelkowe;58000;1681939122;57999;1681971000
+sortowanie babelkowe;59000;1740466845;58999;1740470500
+sortowanie babelkowe;60000;1799899124;59999;1799970000
+sortowanie babelkowe;61000;1860268205;60999;1860469500
+sortowanie babelkowe;62000;1921959130;61999;1921969000
+sortowanie babelkowe;63000;1984344249;62999;1984468500
+sortowanie babelkowe;64000;2047922549;63999;2047968000
+sortowanie babelkowe;65000;2112419605;64999;2112467500
+sortowanie babelkowe;66000;2177929050;65999;2177967000
+sortowanie babelkowe;67000;2244342747;66999;2244466500
+sortowanie babelkowe;68000;2311827399;67999;2311966000
+sortowanie babelkowe;69000;2380459935;68999;2380465500
+sortowanie babelkowe;70000;2449715429;69999;2449965000
+sortowanie babelkowe;71000;2520464445;70999;2520464500
+sortowanie babelkowe;72000;2591923245;71999;2591964000
+sortowanie babelkowe;73000;2664406884;72999;2664463500
+sortowanie babelkowe;74000;2737957540;73999;2737963000
+sortowanie babelkowe;75000;2812366359;74999;2812462500
+sortowanie babelkowe;76000;2887924050;75999;2887962000
+sortowanie babelkowe;77000;2964247315;76999;2964461500
+sortowanie babelkowe;78000;3041904720;77999;3041961000
+sortowanie babelkowe;79000;3120353547;78999;3120460500
+sortowanie babelkowe;80000;3199938885;79999;3199960000
+sortowanie babelkowe;81000;3280432239;80999;3280459500
+sortowanie babelkowe;82000;3361911414;81999;3361959000
+sortowanie babelkowe;83000;3444360597;82999;3444458500
+sortowanie babelkowe;84000;3527820450;83999;3527958000
+sortowanie babelkowe;85000;3612422784;84999;3612457500
+sortowanie babelkowe;86000;3697591060;85999;3697957000
+sortowanie babelkowe;87000;3784453497;86999;3784456500
+sortowanie babelkowe;88000;3871899047;87999;3871956000
+sortowanie babelkowe;89000;3960439029;88999;3960455500
+sortowanie babelkowe;90000;4049931995;89999;4049955000
+sortowanie babelkowe;91000;4140438747;90999;4140454500
+sortowanie babelkowe;92000;4231908850;91999;4231954000
+sortowanie babelkowe;93000;4324422872;92999;4324453500
+sortowanie babelkowe;94000;4417929995;93999;4417953000
+sortowanie babelkowe;95000;4512367834;94999;4512452500
+sortowanie babelkowe;96000;4607803215;95999;4607952000
+sortowanie babelkowe;97000;4704186872;96999;4704451500
+sortowanie babelkowe;98000;4801906747;97999;4801951000
+sortowanie babelkowe;99000;4900445144;98999;4900450500
+sortowanie babelkowe;100000;4999925910;99999;4999950000
+sortowanie przez wstawianie;1000;245415;999;499500
+sortowanie przez wstawianie;2000;982767;1999;1999000
+sortowanie przez wstawianie;3000;2275193;2999;4498500
+sortowanie przez wstawianie;4000;3976064;3999;7998000
+sortowanie przez wstawianie;5000;6294506;4999;12497500
+sortowanie przez wstawianie;6000;8948156;5999;17997000
+sortowanie przez wstawianie;7000;12317230;6999;24496500
+sortowanie przez wstawianie;8000;15742907;7999;31996000
+sortowanie przez wstawianie;9000;20423757;8999;40495500
+sortowanie przez wstawianie;10000;25030375;9999;49995000
+sortowanie przez wstawianie;11000;30105026;10999;60494500
+sortowanie przez wstawianie;12000;35988326;11999;71994000
+sortowanie przez wstawianie;13000;42541691;12999;84493500
+sortowanie przez wstawianie;14000;48812889;13999;97993000
+sortowanie przez wstawianie;15000;56224449;14999;112492500
+sortowanie przez wstawianie;16000;63357208;15999;127992000
+sortowanie przez wstawianie;17000;71306706;16999;144491500
+sortowanie przez wstawianie;18000;80296163;17999;161991000
+sortowanie przez wstawianie;19000;90315220;18999;180490500
+sortowanie przez wstawianie;20000;100207624;19999;199990000
+sortowanie przez wstawianie;21000;109913189;20999;220489500
+sortowanie przez wstawianie;22000;120908301;21999;241989000
+sortowanie przez wstawianie;23000;131543495;22999;264488500
+sortowanie przez wstawianie;24000;143310063;23999;287988000
+sortowanie przez wstawianie;25000;156202143;24999;312487500
+sortowanie przez wstawianie;26000;169376313;25999;337987000
+sortowanie przez wstawianie;27000;183122887;26999;364486500
+sortowanie przez wstawianie;28000;197543449;27999;391986000
+sortowanie przez wstawianie;29000;211695513;28999;420485500
+sortowanie przez wstawianie;30000;226299402;29999;449985000
+sortowanie przez wstawianie;31000;241727713;30999;480484500
+sortowanie przez wstawianie;32000;257648064;31999;511984000
+sortowanie przez wstawianie;33000;274164171;32999;544483500
+sortowanie przez wstawianie;34000;290487761;33999;577983000
+sortowanie przez wstawianie;35000;307796006;34999;612482500
+sortowanie przez wstawianie;36000;325692720;35999;647982000
+sortowanie przez wstawianie;37000;341270470;36999;684481500
+sortowanie przez wstawianie;38000;359395087;37999;721981000
+sortowanie przez wstawianie;39000;378367419;38999;760480500
+sortowanie przez wstawianie;40000;398439367;39999;799980000
+sortowanie przez wstawianie;41000;419077411;40999;840479500
+sortowanie przez wstawianie;42000;440389253;41999;881979000
+sortowanie przez wstawianie;43000;462055982;42999;924478500
+sortowanie przez wstawianie;44000;483452900;43999;967978000
+sortowanie przez wstawianie;45000;505238559;44999;1012477500
+sortowanie przez wstawianie;46000;527610134;45999;1057977000
+sortowanie przez wstawianie;47000;551204451;46999;1104476500
+sortowanie przez wstawianie;48000;574710203;47999;1151976000
+sortowanie przez wstawianie;49000;598818520;48999;1200475500
+sortowanie przez wstawianie;50000;623648337;49999;1249975000
+sortowanie przez wstawianie;51000;648943120;50999;1300474500
+sortowanie przez wstawianie;52000;674519040;51999;1351974000
+sortowanie przez wstawianie;53000;700137568;52999;1404473500
+sortowanie przez wstawianie;54000;726352542;53999;1457973000
+sortowanie przez wstawianie;55000;753034356;54999;1512472500
+sortowanie przez wstawianie;56000;780642961;55999;1567972000
+sortowanie przez wstawianie;57000;808383294;56999;1624471500
+sortowanie przez wstawianie;58000;837378502;57999;1681971000
+sortowanie przez wstawianie;59000;866723326;58999;1740470500
+sortowanie przez wstawianie;60000;896841562;59999;1799970000
+sortowanie przez wstawianie;61000;927326825;60999;1860469500
+sortowanie przez wstawianie;62000;958617990;61999;1921969000
+sortowanie przez wstawianie;63000;989912050;62999;1984468500
+sortowanie przez wstawianie;64000;1020574881;63999;2047968000
+sortowanie przez wstawianie;65000;1054261515;64999;2112467500
+sortowanie przez wstawianie;66000;1086435195;65999;18446744071592551320
+sortowanie przez wstawianie;67000;1120010169;66999;18446744071659050820
+sortowanie przez wstawianie;68000;1153629787;67999;18446744071726550320
+sortowanie przez wstawianie;69000;1188286402;68999;18446744071795049820
+sortowanie przez wstawianie;70000;1222094650;69999;18446744071864549320
+sortowanie przez wstawianie;71000;1256975242;70999;18446744071935048820
+sortowanie przez wstawianie;72000;1292559901;71999;18446744072006548320
+sortowanie przez wstawianie;73000;1329140243;72999;18446744072079047820
+sortowanie przez wstawianie;74000;1376032498;73999;18446744072152547320
+sortowanie przez wstawianie;75000;1412922960;74999;18446744072227046820
+sortowanie przez wstawianie;76000;1451102562;75999;18446744072302546320
+sortowanie przez wstawianie;77000;1488517892;76999;18446744072379045820
+sortowanie przez wstawianie;78000;1527214644;77999;18446744072456545320
+sortowanie przez wstawianie;79000;1566901124;78999;18446744072535044820
+sortowanie przez wstawianie;80000;1605613193;79999;18446744072614544320
+sortowanie przez wstawianie;81000;1647103831;80999;18446744072695043820
+sortowanie przez wstawianie;82000;1687119161;81999;18446744072776543320
+sortowanie przez wstawianie;83000;1724438296;82999;18446744072859042820
+sortowanie przez wstawianie;84000;1766274249;83999;18446744072942542320
+sortowanie przez wstawianie;85000;1810290332;84999;18446744073027041820
+sortowanie przez wstawianie;86000;1854187162;85999;18446744073112541320
+sortowanie przez wstawianie;87000;1897075168;86999;18446744073199040820
+sortowanie przez wstawianie;88000;1941765993;87999;18446744073286540320
+sortowanie przez wstawianie;89000;1985592717;88999;18446744073375039820
+sortowanie przez wstawianie;90000;2030532542;89999;18446744073464539320
+sortowanie przez wstawianie;91000;2076150980;90999;18446744073555038820
+sortowanie przez wstawianie;92000;2112954569;91999;18446744073646538320
+sortowanie przez wstawianie;93000;18446744071574158519;92999;29486204
+sortowanie przez wstawianie;94000;18446744071621296532;93999;122985704
+sortowanie przez wstawianie;95000;18446744071668091401;94999;217485204
+sortowanie przez wstawianie;96000;18446744071715533022;95999;312984704
+sortowanie przez wstawianie;97000;18446744071762946020;96999;409484204
+sortowanie przez wstawianie;98000;18446744071811281135;97999;506983704
+sortowanie przez wstawianie;99000;18446744071860626603;98999;605483204
+sortowanie przez wstawianie;100000;18446744071909664229;99999;704982704
+sortowanie przez scalanie;1000;9976;9976;9976
+sortowanie przez scalanie;2000;21952;21952;21952
+sortowanie przez scalanie;3000;34904;34904;34904
+sortowanie przez scalanie;4000;47904;47904;47904
+sortowanie przez scalanie;5000;61808;61808;61808
+sortowanie przez scalanie;6000;75808;75808;75808
+sortowanie przez scalanie;7000;89808;89808;89808
+sortowanie przez scalanie;8000;103808;103808;103808
+sortowanie przez scalanie;9000;118616;118616;118616
+sortowanie przez scalanie;10000;133616;133616;133616
+sortowanie przez scalanie;11000;148616;148616;148616
+sortowanie przez scalanie;12000;163616;163616;163616
+sortowanie przez scalanie;13000;178616;178616;178616
+sortowanie przez scalanie;14000;193616;193616;193616
+sortowanie przez scalanie;15000;208616;208616;208616
+sortowanie przez scalanie;16000;223616;223616;223616
+sortowanie przez scalanie;17000;239232;239232;239232
+sortowanie przez scalanie;18000;255232;255232;255232
+sortowanie przez scalanie;19000;271232;271232;271232
+sortowanie przez scalanie;20000;287232;287232;287232
+sortowanie przez scalanie;21000;303232;303232;303232
+sortowanie przez scalanie;22000;319232;319232;319232
+sortowanie przez scalanie;23000;335232;335232;335232
+sortowanie przez scalanie;24000;351232;351232;351232
+sortowanie przez scalanie;25000;367232;367232;367232
+sortowanie przez scalanie;26000;383232;383232;383232
+sortowanie przez scalanie;27000;399232;399232;399232
+sortowanie przez scalanie;28000;415232;415232;415232
+sortowanie przez scalanie;29000;431232;431232;431232
+sortowanie przez scalanie;30000;447232;447232;447232
+sortowanie przez scalanie;31000;463232;463232;463232
+sortowanie przez scalanie;32000;479232;479232;479232
+sortowanie przez scalanie;33000;495464;495464;495464
+sortowanie przez scalanie;34000;512464;512464;512464
+sortowanie przez scalanie;35000;529464;529464;529464
+sortowanie przez scalanie;36000;546464;546464;546464
+sortowanie przez scalanie;37000;563464;563464;563464
+sortowanie przez scalanie;38000;580464;580464;580464
+sortowanie przez scalanie;39000;597464;597464;597464
+sortowanie przez scalanie;40000;614464;614464;614464
+sortowanie przez scalanie;41000;631464;631464;631464
+sortowanie przez scalanie;42000;648464;648464;648464
+sortowanie przez scalanie;43000;665464;665464;665464
+sortowanie przez scalanie;44000;682464;682464;682464
+sortowanie przez scalanie;45000;699464;699464;699464
+sortowanie przez scalanie;46000;716464;716464;716464
+sortowanie przez scalanie;47000;733464;733464;733464
+sortowanie przez scalanie;48000;750464;750464;750464
+sortowanie przez scalanie;49000;767464;767464;767464
+sortowanie przez scalanie;50000;784464;784464;784464
+sortowanie przez scalanie;51000;801464;801464;801464
+sortowanie przez scalanie;52000;818464;818464;818464
+sortowanie przez scalanie;53000;835464;835464;835464
+sortowanie przez scalanie;54000;852464;852464;852464
+sortowanie przez scalanie;55000;869464;869464;869464
+sortowanie przez scalanie;56000;886464;886464;886464
+sortowanie przez scalanie;57000;903464;903464;903464
+sortowanie przez scalanie;58000;920464;920464;920464
+sortowanie przez scalanie;59000;937464;937464;937464
+sortowanie przez scalanie;60000;954464;954464;954464
+sortowanie przez scalanie;61000;971464;971464;971464
+sortowanie przez scalanie;62000;988464;988464;988464
+sortowanie przez scalanie;63000;1005464;1005464;1005464
+sortowanie przez scalanie;64000;1022464;1022464;1022464
+sortowanie przez scalanie;65000;1039464;1039464;1039464
+sortowanie przez scalanie;66000;1056928;1056928;1056928
+sortowanie przez scalanie;67000;1074928;1074928;1074928
+sortowanie przez scalanie;68000;1092928;1092928;1092928
+sortowanie przez scalanie;69000;1110928;1110928;1110928
+sortowanie przez scalanie;70000;1128928;1128928;1128928
+sortowanie przez scalanie;71000;1146928;1146928;1146928
+sortowanie przez scalanie;72000;1164928;1164928;1164928
+sortowanie przez scalanie;73000;1182928;1182928;1182928
+sortowanie przez scalanie;74000;1200928;1200928;1200928
+sortowanie przez scalanie;75000;1218928;1218928;1218928
+sortowanie przez scalanie;76000;1236928;1236928;1236928
+sortowanie przez scalanie;77000;1254928;1254928;1254928
+sortowanie przez scalanie;78000;1272928;1272928;1272928
+sortowanie przez scalanie;79000;1290928;1290928;1290928
+sortowanie przez scalanie;80000;1308928;1308928;1308928
+sortowanie przez scalanie;81000;1326928;1326928;1326928
+sortowanie przez scalanie;82000;1344928;1344928;1344928
+sortowanie przez scalanie;83000;1362928;1362928;1362928
+sortowanie przez scalanie;84000;1380928;1380928;1380928
+sortowanie przez scalanie;85000;1398928;1398928;1398928
+sortowanie przez scalanie;86000;1416928;1416928;1416928
+sortowanie przez scalanie;87000;1434928;1434928;1434928
+sortowanie przez scalanie;88000;1452928;1452928;1452928
+sortowanie przez scalanie;89000;1470928;1470928;1470928
+sortowanie przez scalanie;90000;1488928;1488928;1488928
+sortowanie przez scalanie;91000;1506928;1506928;1506928
+sortowanie przez scalanie;92000;1524928;1524928;1524928
+sortowanie przez scalanie;93000;1542928;1542928;1542928
+sortowanie przez scalanie;94000;1560928;1560928;1560928
+sortowanie przez scalanie;95000;1578928;1578928;1578928
+sortowanie przez scalanie;96000;1596928;1596928;1596928
+sortowanie przez scalanie;97000;1614928;1614928;1614928
+sortowanie przez scalanie;98000;1632928;1632928;1632928
+sortowanie przez scalanie;99000;1650928;1650928;1650928
+sortowanie przez scalanie;100000;1668928;1668928;1668928
+wyszukiwanie liniowe;1000;877;69;932
+wyszukiwanie liniowe;2000;1917;69;1932
+wyszukiwanie liniowe;3000;3000;69;2932
+wyszukiwanie liniowe;4000;3756;69;3932
+wyszukiwanie liniowe;5000;5000;69;4932
+wyszukiwanie liniowe;6000;3339;69;5932
+wyszukiwanie liniowe;7000;5310;69;6932
+wyszukiwanie liniowe;8000;4436;69;7932
+wyszukiwanie liniowe;9000;32;69;8932
+wyszukiwanie liniowe;10000;1833;69;9932
+wyszukiwanie liniowe;11000;3324;69;10932
+wyszukiwanie liniowe;12000;3216;69;11932
+wyszukiwanie liniowe;13000;3324;69;12932
+wyszukiwanie liniowe;14000;3324;69;13932
+wyszukiwanie liniowe;15000;2919;69;14932
+wyszukiwanie liniowe;16000;991;69;15932
+wyszukiwanie liniowe;17000;3324;69;16932
+wyszukiwanie liniowe;18000;1396;69;17932
+wyszukiwanie liniowe;19000;19000;69;18932
+wyszukiwanie liniowe;20000;20000;69;19932
+wyszukiwanie liniowe;21000;20003;69;20932
+wyszukiwanie liniowe;22000;5320;69;21932
+wyszukiwanie liniowe;23000;23000;69;22932
+wyszukiwanie liniowe;24000;24000;69;23932
+wyszukiwanie liniowe;25000;2252;69;24932
+wyszukiwanie liniowe;26000;18878;69;25932
+wyszukiwanie liniowe;27000;5760;69;26932
+wyszukiwanie liniowe;28000;11541;69;27932
+wyszukiwanie liniowe;29000;10535;69;28932
+wyszukiwanie liniowe;30000;11541;69;29932
+wyszukiwanie liniowe;31000;6358;69;30932
+wyszukiwanie liniowe;32000;11541;69;31932
+wyszukiwanie liniowe;33000;11541;69;32932
+wyszukiwanie liniowe;34000;11541;69;33932
+wyszukiwanie liniowe;35000;11541;69;34932
+wyszukiwanie liniowe;36000;11541;69;35932
+wyszukiwanie liniowe;37000;37000;69;36932
+wyszukiwanie liniowe;38000;38000;69;37932
+wyszukiwanie liniowe;39000;39000;69;38932
+wyszukiwanie liniowe;40000;40000;69;39932
+wyszukiwanie liniowe;41000;41000;69;40932
+wyszukiwanie liniowe;42000;42000;69;41932
+wyszukiwanie liniowe;43000;43000;69;42932
+wyszukiwanie liniowe;44000;44000;69;43932
+wyszukiwanie liniowe;45000;45000;69;44932
+wyszukiwanie liniowe;46000;46000;69;45932
+wyszukiwanie liniowe;47000;47000;69;46932
+wyszukiwanie liniowe;48000;48000;69;47932
+wyszukiwanie liniowe;49000;49000;69;48932
+wyszukiwanie liniowe;50000;50000;69;49932
+wyszukiwanie liniowe;51000;51000;69;50932
+wyszukiwanie liniowe;52000;52000;69;51932
+wyszukiwanie liniowe;53000;53000;69;52932
+wyszukiwanie liniowe;54000;54000;69;53932
+wyszukiwanie liniowe;55000;38954;69;54932
+wyszukiwanie liniowe;56000;38954;69;55932
+wyszukiwanie liniowe;57000;38954;69;56932
+wyszukiwanie liniowe;58000;38954;69;57932
+wyszukiwanie liniowe;59000;38954;69;58932
+wyszukiwanie liniowe;60000;38954;69;59932
+wyszukiwanie liniowe;61000;38954;69;60932
+wyszukiwanie liniowe;62000;38954;69;61932
+wyszukiwanie liniowe;63000;38954;69;62932
+wyszukiwanie liniowe;64000;38954;69;63932
+wyszukiwanie liniowe;65000;65000;69;64932
+wyszukiwanie liniowe;66000;66000;69;65932
+wyszukiwanie liniowe;67000;67000;69;66932
+wyszukiwanie liniowe;68000;68000;69;67932
+wyszukiwanie liniowe;69000;69000;69;68932
+wyszukiwanie liniowe;70000;70000;69;69932
+wyszukiwanie liniowe;71000;71000;69;70932
+wyszukiwanie liniowe;72000;72000;69;71932
+wyszukiwanie liniowe;73000;73000;69;72932
+wyszukiwanie liniowe;74000;10600;69;73932
+wyszukiwanie liniowe;75000;10600;69;74932
+wyszukiwanie liniowe;76000;10600;69;75932
+wyszukiwanie liniowe;77000;10600;69;76932
+wyszukiwanie liniowe;78000;10600;69;77932
+wyszukiwanie liniowe;79000;10600;69;78932
+wyszukiwanie liniowe;80000;10600;69;79932
+wyszukiwanie liniowe;81000;10600;69;80932
+wyszukiwanie liniowe;82000;10600;69;81932
+wyszukiwanie liniowe;83000;79652;69;82932
+wyszukiwanie liniowe;84000;79652;69;83932
+wyszukiwanie liniowe;85000;79652;69;84932
+wyszukiwanie liniowe;86000;79652;69;85932
+wyszukiwanie liniowe;87000;79652;69;86932
+wyszukiwanie liniowe;88000;79652;69;87932
+wyszukiwanie liniowe;89000;79652;69;88932
+wyszukiwanie liniowe;90000;79652;69;89932
+wyszukiwanie liniowe;91000;79652;69;90932
+wyszukiwanie liniowe;92000;13564;69;91932
+wyszukiwanie liniowe;93000;13564;69;92932
+wyszukiwanie liniowe;94000;13564;69;93932
+wyszukiwanie liniowe;95000;13564;69;94932
+wyszukiwanie liniowe;96000;13564;69;95932
+wyszukiwanie liniowe;97000;13564;69;96932
+wyszukiwanie liniowe;98000;13564;69;97932
+wyszukiwanie liniowe;99000;13564;69;98932
+wyszukiwanie liniowe;100000;13564;69;99932
+wyszukiwanie binarne;1000;-;7;-;
+wyszukiwanie binarne;2000;-;8;-;
+wyszukiwanie binarne;3000;-;7;-;
+wyszukiwanie binarne;4000;-;9;-;
+wyszukiwanie binarne;5000;-;12;-;
+wyszukiwanie binarne;6000;-;8;-;
+wyszukiwanie binarne;7000;-;13;-;
+wyszukiwanie binarne;8000;-;10;-;
+wyszukiwanie binarne;9000;-;14;-;
+wyszukiwanie binarne;10000;-;13;-;
+wyszukiwanie binarne;11000;-;13;-;
+wyszukiwanie binarne;12000;-;9;-;
+wyszukiwanie binarne;13000;-;13;-;
+wyszukiwanie binarne;14000;-;14;-;
+wyszukiwanie binarne;15000;-;14;-;
+wyszukiwanie binarne;16000;-;11;-;
+wyszukiwanie binarne;17000;-;14;-;
+wyszukiwanie binarne;18000;-;15;-;
+wyszukiwanie binarne;19000;-;12;-;
+wyszukiwanie binarne;20000;-;14;-;
+wyszukiwanie binarne;21000;-;14;-;
+wyszukiwanie binarne;22000;-;14;-;
+wyszukiwanie binarne;23000;-;14;-;
+wyszukiwanie binarne;24000;-;10;-;
+wyszukiwanie binarne;25000;-;13;-;
+wyszukiwanie binarne;26000;-;14;-;
+wyszukiwanie binarne;27000;-;14;-;
+wyszukiwanie binarne;28000;-;15;-;
+wyszukiwanie binarne;29000;-;15;-;
+wyszukiwanie binarne;30000;-;15;-;
+wyszukiwanie binarne;31000;-;14;-;
+wyszukiwanie binarne;32000;-;12;-;
+wyszukiwanie binarne;33000;-;15;-;
+wyszukiwanie binarne;34000;-;15;-;
+wyszukiwanie binarne;35000;-;15;-;
+wyszukiwanie binarne;36000;-;16;-;
+wyszukiwanie binarne;37000;-;14;-;
+wyszukiwanie binarne;38000;-;13;-;
+wyszukiwanie binarne;39000;-;15;-;
+wyszukiwanie binarne;40000;-;15;-;
+wyszukiwanie binarne;41000;-;16;-;
+wyszukiwanie binarne;42000;-;15;-;
+wyszukiwanie binarne;43000;-;14;-;
+wyszukiwanie binarne;44000;-;15;-;
+wyszukiwanie binarne;45000;-;16;-;
+wyszukiwanie binarne;46000;-;15;-;
+wyszukiwanie binarne;47000;-;15;-;
+wyszukiwanie binarne;48000;-;11;-;
+wyszukiwanie binarne;49000;-;15;-;
+wyszukiwanie binarne;50000;-;14;-;
+wyszukiwanie binarne;51000;-;16;-;
+wyszukiwanie binarne;52000;-;15;-;
+wyszukiwanie binarne;53000;-;16;-;
+wyszukiwanie binarne;54000;-;15;-;
+wyszukiwanie binarne;55000;-;14;-;
+wyszukiwanie binarne;56000;-;16;-;
+wyszukiwanie binarne;57000;-;12;-;
+wyszukiwanie binarne;58000;-;16;-;
+wyszukiwanie binarne;59000;-;15;-;
+wyszukiwanie binarne;60000;-;16;-;
+wyszukiwanie binarne;61000;-;16;-;
+wyszukiwanie binarne;62000;-;15;-;
+wyszukiwanie binarne;63000;-;16;-;
+wyszukiwanie binarne;64000;-;13;-;
+wyszukiwanie binarne;65000;-;16;-;
+wyszukiwanie binarne;66000;-;16;-;
+wyszukiwanie binarne;67000;-;14;-;
+wyszukiwanie binarne;68000;-;16;-;
+wyszukiwanie binarne;69000;-;15;-;
+wyszukiwanie binarne;70000;-;16;-;
+wyszukiwanie binarne;71000;-;10;-;
+wyszukiwanie binarne;72000;-;17;-;
+wyszukiwanie binarne;73000;-;16;-;
+wyszukiwanie binarne;74000;-;15;-;
+wyszukiwanie binarne;75000;-;16;-;
+wyszukiwanie binarne;76000;-;14;-;
+wyszukiwanie binarne;77000;-;17;-;
+wyszukiwanie binarne;78000;-;16;-;
+wyszukiwanie binarne;79000;-;15;-;
+wyszukiwanie binarne;80000;-;16;-;
+wyszukiwanie binarne;81000;-;13;-;
+wyszukiwanie binarne;82000;-;17;-;
+wyszukiwanie binarne;83000;-;17;-;
+wyszukiwanie binarne;84000;-;16;-;
+wyszukiwanie binarne;85000;-;15;-;
+wyszukiwanie binarne;86000;-;15;-;
+wyszukiwanie binarne;87000;-;16;-;
+wyszukiwanie binarne;88000;-;16;-;
+wyszukiwanie binarne;89000;-;14;-;
+wyszukiwanie binarne;90000;-;17;-;
+wyszukiwanie binarne;91000;-;16;-;
+wyszukiwanie binarne;92000;-;16;-;
+wyszukiwanie binarne;93000;-;15;-;
+wyszukiwanie binarne;94000;-;16;-;
+wyszukiwanie binarne;95000;-;12;-;
+wyszukiwanie binarne;96000;-;12;-;
+wyszukiwanie binarne;97000;-;17;-;
+wyszukiwanie binarne;98000;-;16;-;
+wyszukiwanie binarne;99000;-;15;-;
+wyszukiwanie binarne;100000;-;15;-;
