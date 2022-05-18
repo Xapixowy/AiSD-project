@@ -3,6 +3,8 @@
 #include <cstdlib>
 #include <string>
 #include <fstream>
+#include <cmath>
+#include <ctime>
 
 #include "Arrays.h"
 #include "SortingAlgorithms.h"
@@ -15,27 +17,28 @@ int main()
     // Tryb debugowania
     // debug = true <-- Wlacza tryb debugowania
     // debug = false <-- Wylacza tryb debugowania
-    bool debug = true;
+    bool debug = false;
 
     // Obsluga programu
-    setw(16);
     cout << "AiSD - Projekt\n\n";
     fstream data;
     string fileName = "", folderName="data";
-    bool createObjects = true;
-    int dataQuantity = 0, dataSize = 0, dataMin, dataMax, searchingValue;
-    char saveToFile = 'a', showData = 'a', bubbleSort='a', insertionSort ='a', mergeSort='a', linearSearch='a', binarySearch='a';
+    bool runDefaultProgram = true;
+    int dataQuantity = 0, dataSize = 0, dataMin = 0, dataMax = 0, searchingValue = 0;
+    char dataMaxAuto = 'a', bubbleSort = 'a', insertionSort = 'a', mergeSort = 'a',linearSearch = 'a', binarySearch = 'a', searchingValueAuto = 'a', saveToFile = 'a', showData = 'a';
     if (debug) {
-        createObjects = true;
+        runDefaultProgram = true;
         dataQuantity = 100;
-        dataSize = 500;
-        dataMin = 0;
-        dataMax = 0;
+        dataSize = 10;
+        dataMaxAuto = 'y';
+        dataMin = 1;
+        dataMax = 100;
         bubbleSort = 'y';
         insertionSort = 'y';
         mergeSort = 'y';
         linearSearch = 'y';
         binarySearch = 'y';
+        searchingValueAuto = 'y';
         searchingValue = 319;
         saveToFile = 'y';
         fileName = "data";
@@ -48,12 +51,21 @@ int main()
         cout << "Podaj liczbe elementow pierwszej tablicy (>0): ";
         while (dataSize <= 0)
             cin >> dataSize;
-        cout << "Podaj maksymalna wartosc elementu w tablicy: ";
-        cin >> dataMax;
-        cout << "Podaj minimalna wartosc elementu w tablicy (<max): ";
-        do
-            cin >> dataMin;
-        while (dataMin > dataMax);
+        cout << "Czy chcesz, aby maksymalna wartosc elementu w tablicy byla proporcjonalna do jej dlugosci? (y/n): ";
+        while (!cin.fail() && tolower(dataMaxAuto) != 'y' && tolower(dataMaxAuto) != 'n')
+            cin >> dataMaxAuto;
+        if (dataMaxAuto == 'n') {
+            cout << "Podaj maksymalna wartosc elementu w tablicy: ";
+            cin >> dataMax;
+            cout << "Podaj minimalna wartosc elementu w tablicy (<max): ";
+            do
+                cin >> dataMin;
+            while (dataMin >= dataMax);
+        }
+        else {
+            dataMin = 0;
+            dataMax = 0;
+        }
         cout << "\nCzy chcesz uzyc algorytmu sortowania babelkowego? (y/n): ";
         while (!cin.fail() && tolower(bubbleSort) != 'y' && tolower(bubbleSort) != 'n')
             cin >> bubbleSort;
@@ -70,10 +82,15 @@ int main()
         while (!cin.fail() && tolower(binarySearch) != 'y' && tolower(binarySearch) != 'n')
             cin >> binarySearch;
         if (linearSearch == 'y' || binarySearch == 'y') {
-            cout << "\nPodaj wyszukiwana wartosc dla algorytmow wyszukiwania (>=min i <=max): ";
-            do
-                cin >> searchingValue;
-            while (searchingValue < dataMin || searchingValue > dataMax);
+            cout << "\nCzy chcesz, aby wyszukiwana wartoscia dla algorytmow wyszukiwania byla losowa wartoscia? (y/n): ";
+            while (!cin.fail() && tolower(searchingValueAuto) != 'y' && tolower(searchingValueAuto) != 'n')
+                cin >> searchingValueAuto;
+            if (searchingValueAuto == 'n') {
+                cout << "Podaj wyszukiwana wartosc dla algorytmow wyszukiwania (>=min i <=max): ";
+                do
+                    cin >> searchingValue;
+                while (searchingValue < dataMin || searchingValue > dataMax);
+            }
         }
         cout << "\nZapisac wynik dzialania programu do pliku (y/n)?: ";
         while (!cin.fail() && tolower(saveToFile) != 'y' && tolower(saveToFile) != 'n')
@@ -88,15 +105,29 @@ int main()
             cin >> showData;
     }
 
-    if (createObjects) {
+    if (runDefaultProgram) {
         // Wyswietlenie podsumowania wyborow uzytkownika
         system("cls");
         cout << (char)(175) << " Podsumowanie wyborow:\n";
         cout << "Liczba tablic do wygenerowania: " << dataQuantity << "\n";
         cout << "Liczba elementow pierwszej tablicy: " << dataSize << "\n";
-        cout << "Minimalna wartosc elementu w tablicy: " << dataMin << "\n";
-        cout << "Maksymalna wartosc elementu w tablicy: " << dataMax << "\n";
-        cout << "Wyszukiwana wartosc dla algorytmow wyszukiwania: " << searchingValue << "\n";
+        cout << "Minimalna wartosc elementu w tablicy: ";
+        if (dataMaxAuto == 'y')
+            cout << "1\n";
+        else
+            cout << dataMin << "\n";
+        cout << "Maksymalna wartosc elementu w tablicy: ";
+        if (dataMaxAuto == 'y')
+            cout << "auto\n";
+        else
+            cout << dataMax << "\n";
+        if (linearSearch == 'y' || binarySearch == 'y') {
+            cout << "Wyszukiwana wartosc dla algorytmow wyszukiwania: ";
+            if (searchingValueAuto == 'y')
+                cout << "auto\n";
+            else
+                cout << searchingValue << "\n";
+        }
         cout << "Czy zapisac dane do pliku: " << (saveToFile == 'y' ? "tak" : "nie") << "\n";
         if (saveToFile == 'y') {
             cout << "Nazwa pliku: " << fileName << "\n";
@@ -106,22 +137,25 @@ int main()
 
         // Tworzenie obiektow
         if ((bubbleSort == 'y') || (insertionSort == 'y') || (mergeSort == 'y') || (linearSearch == 'y') || (binarySearch == 'y')) {
+            srand(time(NULL));
             cout << "[ ] Tworzenie obiektow...";
             Arrays** tablice = new Arrays * [dataQuantity];
-            SortingAlgorithms** bubbleSortRandom = new SortingAlgorithms * [dataQuantity];
-            SortingAlgorithms** bubbleSortAscending = new SortingAlgorithms * [dataQuantity];
-            SortingAlgorithms** bubbleSortDescending = new SortingAlgorithms * [dataQuantity];
-            SortingAlgorithms** insertionSortRandom = new SortingAlgorithms * [dataQuantity];
-            SortingAlgorithms** insertionSortAscending = new SortingAlgorithms * [dataQuantity];
-            SortingAlgorithms** insertionSortDescending = new SortingAlgorithms * [dataQuantity];
-            SortingAlgorithms** mergeSortRandom = new SortingAlgorithms * [dataQuantity];
-            SortingAlgorithms** mergeSortAscending = new SortingAlgorithms * [dataQuantity];
-            SortingAlgorithms** mergeSortDescending = new SortingAlgorithms * [dataQuantity];
-            SearchingAlgorithms** linearSearchRandom = new SearchingAlgorithms * [dataQuantity];
-            SearchingAlgorithms** linearSearchAscending = new SearchingAlgorithms * [dataQuantity];
-            SearchingAlgorithms** linearSearchDescending = new SearchingAlgorithms * [dataQuantity];
-            SearchingAlgorithms** binarySearchAscending = new SearchingAlgorithms * [dataQuantity];
-            for (int i = 0; i < dataQuantity; i++) {
+            SortingAlgorithms** bubbleSortRandom = new SortingAlgorithms * [dataQuantity - 1];
+            SortingAlgorithms** bubbleSortAscending = new SortingAlgorithms * [dataQuantity - 1];
+            SortingAlgorithms** bubbleSortDescending = new SortingAlgorithms * [dataQuantity - 1];
+            SortingAlgorithms** insertionSortRandom = new SortingAlgorithms * [dataQuantity - 1];
+            SortingAlgorithms** insertionSortAscending = new SortingAlgorithms * [dataQuantity - 1];
+            SortingAlgorithms** insertionSortDescending = new SortingAlgorithms * [dataQuantity - 1];
+            SortingAlgorithms** mergeSortRandom = new SortingAlgorithms * [dataQuantity - 1];
+            SortingAlgorithms** mergeSortAscending = new SortingAlgorithms * [dataQuantity - 1];
+            SortingAlgorithms** mergeSortDescending = new SortingAlgorithms * [dataQuantity - 1];
+            SearchingAlgorithms** linearSearchRandom = new SearchingAlgorithms * [dataQuantity - 1];
+            SearchingAlgorithms** linearSearchAscending = new SearchingAlgorithms * [dataQuantity - 1];
+            SearchingAlgorithms** linearSearchDescending = new SearchingAlgorithms * [dataQuantity - 1];
+            SearchingAlgorithms** binarySearchAscending = new SearchingAlgorithms * [dataQuantity - 1];
+            for (int i = 0; i < dataQuantity-1; i++) {
+                if (searchingValueAuto == 'y')
+                    searchingValue = rand() % ((i + 1) * dataSize) + 1;
                 tablice[i] = new Arrays((i + 1) * dataSize, dataMax, dataMin);
                 if (bubbleSort == 'y') {
                     bubbleSortRandom[i] = new SortingAlgorithms(tablice[i]->getArray(0), (i + 1) * dataSize, false);
@@ -155,7 +189,7 @@ int main()
                 cout << "Sortowanie obiektow...\n";
                 if (bubbleSort == 'y') {
                     cout << "\t[ ] Algorytm sortowania babelkowego...";
-                    for (int i = 0; i < dataQuantity; i++) {
+                    for (int i = 0; i < dataQuantity - 1; i++) {
                         bubbleSortRandom[i]->sort(0);
                         bubbleSortAscending[i]->sort(0);
                         bubbleSortDescending[i]->sort(0);
@@ -164,7 +198,7 @@ int main()
                 }
                 if (insertionSort == 'y') {
                     cout << "\t[ ] Algorytm sortowania przez wstawianie...";
-                    for (int i = 0; i < dataQuantity; i++) {
+                    for (int i = 0; i < dataQuantity - 1; i++) {
                         insertionSortRandom[i]->sort(1);
                         insertionSortAscending[i]->sort(1);
                         insertionSortDescending[i]->sort(1);
@@ -173,7 +207,7 @@ int main()
                 }
                 if (mergeSort == 'y') {
                     cout << "\t[ ] Algorytm sortowania przez scalanie...";
-                    for (int i = 0; i < dataQuantity; i++) {
+                    for (int i = 0; i < dataQuantity - 1; i++) {
                         mergeSortRandom[i]->sort(2);
                         mergeSortAscending[i]->sort(2);
                         mergeSortDescending[i]->sort(2);
@@ -187,7 +221,7 @@ int main()
                 cout << "Przeszukiwanie obiektow...\n";
                 if (linearSearch == 'y') {
                     cout << "\t[ ] Algorytm wyszukiwania liniowego...";
-                    for (int i = 0; i < dataQuantity; i++) {
+                    for (int i = 0; i < dataQuantity - 1; i++) {
                         linearSearchRandom[i]->search(0);
                         linearSearchAscending[i]->search(0);
                         linearSearchDescending[i]->search(0);
@@ -196,7 +230,7 @@ int main()
                 }
                 if (binarySearch == 'y') {
                     cout << "\t[ ] Algorytm wyszukiwania binarnego...";
-                    for (int i = 0; i < dataQuantity; i++) {
+                    for (int i = 0; i < dataQuantity - 1; i++) {
                         binarySearchAscending[i]->search(1);
                     }
                     cout << "\r\t[X] Algorytm wyszukiwania binarnego   \n";
@@ -214,61 +248,71 @@ int main()
                     folderName.append(fileName);
                 }
                 data.open(folderName, ios::app);
-                data << "Algorytm;Wielkosc tablicy;Wartosci losowo;Wartosci rosnaco;Wartosci malejaco\n";
-                for (int i = 0; i < dataQuantity; i++) {
+                data << "Algorytm;Wielkosc tablicy;Wartosci losowo;Wartosci rosnaco;Wartosci malejaco;Pomocnicza\n";
+                data << "sortowanie babelkowe;0;0;0;0;0\n";
+                for (int i = 0; i < dataQuantity - 1; i++) {
                     data << "sortowanie babelkowe;";
                     data << (i + 1) * dataSize << ";";
                     if (bubbleSort == 'y') {
                         data << bubbleSortRandom[i]->getDominantOperations() << ";";
                         data << bubbleSortAscending[i]->getDominantOperations() << ";";
-                        data << bubbleSortDescending[i]->getDominantOperations() << "\n";
+                        data << bubbleSortDescending[i]->getDominantOperations() << ";";
+                        data << pow((i + 1) * dataSize, 2) << "\n";
                     }
                     else
-                        data << "0;0;0\n";
+                        data << "0;0;0;0\n";
                 }
-                for (int i = 0; i < dataQuantity; i++) {
+                data << "sortowanie przez wstawianie;0;0;0;0;0\n";
+                for (int i = 0; i < dataQuantity - 1; i++) {
                     data << "sortowanie przez wstawianie;";
                     data << (i + 1) * dataSize << ";";
                     if (insertionSort == 'y') {
                         data << insertionSortRandom[i]->getDominantOperations() << ";";
                         data << insertionSortAscending[i]->getDominantOperations() << ";";
-                        data << insertionSortDescending[i]->getDominantOperations() << "\n";
+                        data << insertionSortDescending[i]->getDominantOperations() << ";";
+                        data << pow((i + 1) * dataSize, 2) << "\n";
                     }
                     else
-                        data << "0;0;0\n";
+                        data << "0;0;0;0\n";
                 }
-                for (int i = 0; i < dataQuantity; i++) {
+                data << "sortowanie przez scalanie;0;0;0;0;0\n";
+                for (int i = 0; i < dataQuantity - 1; i++) {
                     data << "sortowanie przez scalanie;";
                     data << (i + 1) * dataSize << ";";
                     if (mergeSort == 'y') {
                         data << mergeSortRandom[i]->getDominantOperations() << ";";
                         data << mergeSortAscending[i]->getDominantOperations() << ";";
-                        data << mergeSortDescending[i]->getDominantOperations() << "\n";
+                        data << mergeSortDescending[i]->getDominantOperations() << ";";
+                        data << ((i + 1) * dataSize) * log2((i + 1) * dataSize) << "\n";
                     }
                     else
-                        data << "0;0;0\n";
+                        data << "0;0;0;0\n";
                 }
-                for (int i = 0; i < dataQuantity; i++) {
+                data << "wyszukiwanie liniowe;0;0;0;0;0\n";
+                for (int i = 0; i < dataQuantity - 1; i++) {
                     data << "wyszukiwanie liniowe;";
                     data << (i + 1) * dataSize << ";";
                     if (linearSearch == 'y') {
                         data << linearSearchRandom[i]->getDominantOperations() << ";";
                         data << linearSearchAscending[i]->getDominantOperations() << ";";
-                        data << linearSearchDescending[i]->getDominantOperations() << "\n";
+                        data << linearSearchDescending[i]->getDominantOperations() << ";";
+                        data << (i + 1) * dataSize << "\n";
                     }
                     else
-                        data << "0;0;0\n";
+                        data << "0;0;0;0\n";
                 }
-                for (int i = 0; i < dataQuantity; i++) {
+                data << "wyszukiwanie binarne;0;0;0;0;0\n";
+                for (int i = 0; i < dataQuantity - 1; i++) {
                     data << "wyszukiwanie binarne;";
                     data << (i + 1) * dataSize << ";";
                     if (binarySearch == 'y') {
-                        data << "-;";
+                        data << "0;";
                         data << binarySearchAscending[i]->getDominantOperations() << ";";
-                        data << "-;\n";
+                        data << "0;";
+                        data << log2((i + 1) * dataSize) << "\n";
                     }
                     else
-                        data << "-;0;-\n";
+                        data << "0;0;0;0\n";
                 }
                 data.close();
                 cout << "\r[X] Dane zapisane do pliku!       \n";
@@ -290,7 +334,11 @@ int main()
                     cout << setw(12) << "rosnaco:\t";
                     cout << setw(12) << "malejaco:\n";
                     cout << "------------------------------------------------------------\n";
-                    for (int i = 0; i < dataQuantity; i++) {
+                    cout << setw(12) << "0\t";
+                    cout << setw(12) << "0\t";
+                    cout << setw(12) << "0\t";
+                    cout << setw(12) << "0\n";
+                    for (int i = 0; i < dataQuantity - 1; i++) {
                         cout << setw(12) << (i + 1) * dataSize << "\t";
                         cout << setw(12) << bubbleSortRandom[i]->getDominantOperations() << "\t";
                         cout << setw(12) << bubbleSortAscending[i]->getDominantOperations() << "\t";
@@ -309,7 +357,11 @@ int main()
                     cout << setw(12) << "rosnaco:\t";
                     cout << setw(12) << "malejaco:\n";
                     cout << "------------------------------------------------------------\n";
-                    for (int i = 0; i < dataQuantity; i++) {
+                    cout << setw(12) << "0\t";
+                    cout << setw(12) << "0\t";
+                    cout << setw(12) << "0\t";
+                    cout << setw(12) << "0\n";
+                    for (int i = 0; i < dataQuantity - 1; i++) {
                         cout << setw(12) << (i + 1) * dataSize << "\t";
                         cout << setw(12) << insertionSortRandom[i]->getDominantOperations() << "\t";
                         cout << setw(12) << insertionSortAscending[i]->getDominantOperations() << "\t";
@@ -328,7 +380,11 @@ int main()
                     cout << setw(12) << "rosnaco:\t";
                     cout << setw(12) << "malejaco:\n";
                     cout << "------------------------------------------------------------\n";
-                    for (int i = 0; i < dataQuantity; i++) {
+                    cout << setw(12) << "0\t";
+                    cout << setw(12) << "0\t";
+                    cout << setw(12) << "0\t";
+                    cout << setw(12) << "0\n";
+                    for (int i = 0; i < dataQuantity - 1; i++) {
                         cout << setw(12) << (i + 1) * dataSize << "\t";
                         cout << setw(12) << mergeSortRandom[i]->getDominantOperations() << "\t";
                         cout << setw(12) << mergeSortAscending[i]->getDominantOperations() << "\t";
@@ -347,8 +403,12 @@ int main()
                     cout << setw(12) << "rosnaco:\t";
                     cout << setw(12) << "malejaco:\n";
                     cout << "------------------------------------------------------------\n";
-                    for (int i = 0; i < dataQuantity; i++) {
-                        cout << setw(12) <<  (i + 1) * dataSize << "\t";
+                    cout << setw(12) << "0\t";
+                    cout << setw(12) << "0\t";
+                    cout << setw(12) << "0\t";
+                    cout << setw(12) << "0\n";
+                    for (int i = 0; i < dataQuantity - 1; i++) {
+                        cout << setw(12) << (i + 1) * dataSize << "\t";
                         cout << setw(12) << linearSearchRandom[i]->getDominantOperations() << "\t";
                         cout << setw(12) << linearSearchAscending[i]->getDominantOperations() << "\t";
                         cout << setw(12) << linearSearchDescending[i]->getDominantOperations() << "\n";
@@ -366,7 +426,11 @@ int main()
                     cout << setw(12) << "rosnaco:\t";
                     cout << setw(12) << "malejaco:\n";
                     cout << "------------------------------------------------------------\n";
-                    for (int i = 0; i < dataQuantity; i++) {
+                    cout << setw(12) << "0\t";
+                    cout << setw(12) << "-\t";
+                    cout << setw(12) << "0\t";
+                    cout << setw(12) << "-\n";
+                    for (int i = 0; i < dataQuantity - 1; i++) {
                         cout << setw(12) << (i + 1) * dataSize << "\t";
                         cout << setw(12) << "-\t";
                         cout << setw(12) << binarySearchAscending[i]->getDominantOperations() << "\t";
@@ -377,14 +441,7 @@ int main()
         }
     }
     else {
-    Arrays siema(100);
-    siema.printArrays();
-    cout << "\n\n";
-    SearchingAlgorithms siemaneczko(siema.getArray(1), 100, 69);
-    siemaneczko.printArray();
-    siemaneczko.printAlgorithm();
-    siemaneczko.printPosition();
+        // Kod do przetestowania 
     }
-
     system("pause");
 }

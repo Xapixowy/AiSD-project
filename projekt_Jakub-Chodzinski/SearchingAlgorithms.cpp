@@ -95,8 +95,8 @@ int SearchingAlgorithms::linearSearch(int* array, int searchingValue, int size) 
 
 int SearchingAlgorithms::binarySearch(int* array, int searchingValue, int left, int right) {
 	while (left <= right) {
-		this->dominantOperations++;
 		int middle = left + (right - left) / 2;
+		this->dominantOperations++;
 		if (array[middle] == searchingValue)
 			return middle;
 		if (array[middle] < searchingValue)

@@ -128,7 +128,6 @@ void SortingAlgorithms::merge(int* array, int left, int middleValue, int right) 
 	k = left;
 	while (i < n1 && j < n2)
 	{
-		this->dominantOperations++;
 		if (Left[i] <= Right[j])
 		{
 			array[k] = Left[i];
